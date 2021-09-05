@@ -263,6 +263,9 @@ body {
   cursor: pointer;
   background: transparent;
   border: none;
+  position: absolute;
+  margin-top: -32px;
+  margin-left: 222px;
 }
 
 .copyright-text {
