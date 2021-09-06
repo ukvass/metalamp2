@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+  head
+    title=pageTitle
+    style
+      include styles/formelements.css
+  body
+    .circle
+      img(src="../colorsandtype/images/logo_1.svg")
+    .column
+      .block
+        .text-wrap
+          p.text-bold text field
+          p.text-default default
+        .input
+          input.input(
+          type='text'
+          name=''
+          value='   Email'
+          button=''
+          )
+      .block
+        .text-wrap
+          p.text-bold text field
+          p.text-default hover/focus
+        .input
+          input.input.input_focus.input_text(
+          type='text'
+          name=''
+          value='   This is pretty awesome'
+          button=''
+          )
+      .block
+        .text-wrap
+          p.text-bold dropdown
+        .input
+          input.input.input_text(
+          type='text'
+          name=''
+          value='   Сколько гостей'
+          button=''
+          )
+          button.arrow
+                  img(src='/ui_kit/headersandfooters/images/expand_more.svg')

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <style>@charset "UTF-8";
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../colorsandtype/fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../colorsandtype/fonts/Montserrat-Bold.woff") format("woff"), url("../colorsandtype/fonts/Montserrat-Bold.ttf") format("truetype"), url("../colorsandtype/fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../colorsandtype/fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../colorsandtype/fonts/Montserrat-Regular.woff") format("woff"), url("../colorsandtype/fonts/Montserrat-Regular.ttf") format("truetype"), url("../colorsandtype/fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+  max-width: 1440px;
+}
+
+.circle {
+  width: 42px;
+  height: 42px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.input {
+  width: 320px;
+  height: 44px;
+  background: transparent;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.input_focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.input_text {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 122.5px;
+}
+
+.text-default {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.text-bold {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+.text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: -8px;
+}
+
+.block {
+  margin-left: 63px;
+  margin-top: 20.5px;
+}
+
+.arrow {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 285px;
+}
+/*# sourceMappingURL=formelements.css.map */
+    </style>
+  </head>
+  <body>
+    <div class="circle"><img src="../colorsandtype/images/logo_1.svg"></div>
+    <div class="column">
+      <div class="block">
+        <div class="text-wrap">
+          <p class="text-bold">text field</p>
+          <p class="text-default">default</p>
+        </div>
+        <div class="input">
+          <input class="input" type="text" name="" value="   Email" button="">
+        </div>
+      </div>
+      <div class="block">
+        <div class="text-wrap">
+          <p class="text-bold">text field</p>
+          <p class="text-default">hover/focus</p>
+        </div>
+        <div class="input">
+          <input class="input input_focus input_text" type="text" name="" value="   This is pretty awesome" button="">
+        </div>
+      </div>
+      <div class="block">
+        <div class="text-wrap">
+          <p class="text-bold">dropdown</p>
+        </div>
+        <div class="input">
+          <input class="input input_text" type="text" name="" value="   Сколько гостей" button="">
+          <button class="arrow"><img src="/ui_kit/headersandfooters/images/expand_more.svg"></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
