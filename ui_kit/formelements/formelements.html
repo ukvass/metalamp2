@@ -58,6 +58,14 @@ body {
   color: rgba(31, 32, 65, 0.75);
 }
 
+.input_little {
+  width: 150px;
+}
+
+.input_medium {
+  width: 266px;
+}
+
 .column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,13 +113,63 @@ body {
   margin-top: 20.5px;
 }
 
+.arrow1-position {
+  margin-top: -31px;
+  margin-left: 285px;
+}
+
+.arrow2-position {
+  margin-top: -31px;
+  margin-left: 115px;
+}
+
+.arrow3-position {
+  margin-top: -31px;
+  margin-left: 230px;
+}
+
+.arrow4-position {
+  margin-top: -32px;
+  margin-left: 230px;
+}
+
 .arrow {
   cursor: pointer;
   background: transparent;
   border: none;
   position: absolute;
-  margin-top: -30px;
-  margin-left: 285px;
+}
+
+.block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20.5px;
+}
+
+.wrap-lilinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 60px;
+}
+
+.wrap2-lilinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: -40px;
 }
 /*# sourceMappingURL=formelements.css.map */
     </style>
@@ -143,7 +201,53 @@ body {
         </div>
         <div class="input">
           <input class="input input_text" type="text" name="" value="   Сколько гостей" button="">
-          <button class="arrow"><img src="/ui_kit/headersandfooters/images/expand_more.svg"></button>
+          <button class="arrow arrow1-position"><img src="/ui_kit/headersandfooters/images/expand_more.svg"></button>
+        </div>
+      </div>
+      <div class="block">
+        <div class="text-wrap">
+          <p class="text-bold">masked text field</p>
+        </div>
+        <div class="input">
+          <input class="input" type="text" name="" value="   ДД.ММ.ГГ" button="">
+        </div>
+      </div>
+      <div class="block2">
+        <div class="wrap-lilinput">
+          <div class="text-wrap">
+            <p class="text-bold">date dropdown</p>
+          </div>
+          <div class="input input_little">
+            <input class="input input_little" type="text" name="" value="   ДД.ММ.ГГ" button="">
+            <button class="arrow arrow2-position"><img src="/ui_kit/headersandfooters/images/expand_more.svg"></button>
+          </div>
+        </div>
+        <div class="wrap2-lilinput">
+          <div class="text-wrap">
+            <p class="text-bold">date dropdown</p>
+          </div>
+          <div class="input input_little">
+            <input class="input input_little" type="text" name="" value="   19.08.2019" button="">
+            <button class="arrow arrow2-position"><img src="/ui_kit/headersandfooters/images/expand_more.svg"></button>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="text-wrap">
+          <p class="text-bold">filter date dropdown</p>
+        </div>
+        <div class="input input_medium">
+          <input class="input input_medium input_text" type="text" name="" value="   19 авг - 23 авг" button="">
+          <button class="arrow arrow3-position"><img src="/ui_kit/headersandfooters/images/expand_more.svg"></button>
+        </div>
+      </div>
+      <div class="block">
+        <div class="text-wrap">
+          <p class="text-bold">subscription text field</p>
+        </div>
+        <div class="input input_medium">
+          <input class="input input_medium" type="text" name="" value="   Email" button="">
+          <button class="arrow arrow4-position"><img src="/ui_kit/headersandfooters/images/arrow_forward.svg"></button>
         </div>
       </div>
     </div>

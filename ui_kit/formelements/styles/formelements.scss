@@ -47,6 +47,12 @@ body {
     &_text {
         color: rgba(31, 32, 65, 0.75);
     }
+    &_little {
+        width: 150px;
+    }
+    &_medium {
+        width: 266px;
+    }
 }
 
 .column {
@@ -87,11 +93,47 @@ body {
     margin-top: 20.5px;
 }
 
+.arrow1-position {
+    margin-top: -31px;
+    margin-left: 285px;
+}
+
+.arrow2-position {
+    margin-top: -31px;
+    margin-left: 115px;
+}
+
+.arrow3-position {
+    margin-top: -31px;
+    margin-left: 230px;
+}
+
+.arrow4-position {
+    margin-top: -32px;
+    margin-left: 230px;
+}
+
 .arrow {
     cursor: pointer;
     background: transparent;
     border: none;
     position: absolute;
-    margin-top: -30px;
-    margin-left: 285px;
+}
+
+.block2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20.5px;
+}
+
+.wrap-lilinput {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.wrap2-lilinput {
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
 }
