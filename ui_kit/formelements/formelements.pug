@@ -89,7 +89,7 @@ html(lang="en")
           )
           button.arrow.arrow-position
             img(src='/ui_kit/headersandfooters/images/expand_more.svg')
-      .block
+      .block.block_last
         .text-wrap
           p.text-bold subscription text field
         div
@@ -101,3 +101,27 @@ html(lang="en")
           )
           button.arrow.arrow2-position
             img(src='/ui_kit/headersandfooters/images/arrow_forward.svg')
+      .block
+        .text-wrap.text-wrap_medium
+          p.text-bold dropdown
+          p.text-default default
+        div
+          input.input.input_text.input_medium.input_halfborder(
+          type='text'
+          name=''
+          value='   2 спальни, 2 кровати...'
+          button=''
+          )
+      .block
+        .text-wrap.text-wrap_medium
+          p.text-bold dropdown
+          p.text-default expanded
+        div
+          input.input.input_text.input_focus.input_medium.input_halfborder(
+          type='text'
+          name=''
+          value='   2 спальни, 2 кровати...'
+          button=''
+          )
+      .block
+        .dropdown

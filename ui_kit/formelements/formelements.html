@@ -66,6 +66,10 @@ body {
   width: 266px;
 }
 
+.input_halfborder {
+  border-radius: 4px 4px 0px 0px;
+}
+
 .column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,9 +112,17 @@ body {
   margin-bottom: -8px;
 }
 
+.text-wrap_medium {
+  max-width: 266px;
+}
+
 .block {
   margin-left: 63px;
   margin-top: 20.5px;
+}
+
+.block_last {
+  margin-bottom: 100px;
 }
 
 .arrow-position {
@@ -160,6 +172,16 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: -40px;
+}
+
+.dropdown {
+  width: 266px;
+  height: 119px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 0px 0px 4px 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: -21px;
 }
 /*# sourceMappingURL=formelements.css.map */
     </style>
@@ -231,7 +253,7 @@ body {
           <button class="arrow arrow-position"><img src="/ui_kit/headersandfooters/images/expand_more.svg"></button>
         </div>
       </div>
-      <div class="block">
+      <div class="block block_last">
         <div class="text-wrap">
           <p class="text-bold">subscription text field</p>
         </div>
@@ -239,6 +261,27 @@ body {
           <input class="input input_medium" type="text" name="" value="   Email" button="">
           <button class="arrow arrow2-position"><img src="/ui_kit/headersandfooters/images/arrow_forward.svg"></button>
         </div>
+      </div>
+      <div class="block">
+        <div class="text-wrap text-wrap_medium">
+          <p class="text-bold">dropdown</p>
+          <p class="text-default">default</p>
+        </div>
+        <div>
+          <input class="input input_text input_medium input_halfborder" type="text" name="" value="   2 спальни, 2 кровати..." button="">
+        </div>
+      </div>
+      <div class="block">
+        <div class="text-wrap text-wrap_medium">
+          <p class="text-bold">dropdown</p>
+          <p class="text-default">expanded</p>
+        </div>
+        <div>
+          <input class="input input_text input_focus input_medium input_halfborder" type="text" name="" value="   2 спальни, 2 кровати..." button="">
+        </div>
+      </div>
+      <div class="block">
+        <div class="dropdown"></div>
       </div>
     </div>
   </body>
