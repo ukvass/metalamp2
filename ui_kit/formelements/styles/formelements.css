@@ -106,6 +106,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: -8px;
+  margin-left: -15px;
 }
 
 .text-wrap_medium {
@@ -259,5 +260,16 @@ p.text-bold {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.block .dropdown {
+  margin-bottom: 54.5px;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+}
+
+.arrow-position3 {
+  margin-left: 245px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=formelements.css.map */
