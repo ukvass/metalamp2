@@ -74,6 +74,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.margin {
   margin-top: 122.5px;
 }
 
@@ -86,6 +89,12 @@ body {
   text-align: right;
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
+}
+
+.text-default_lowercase {
+  text-transform: inherit;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .text-bold {
@@ -252,16 +261,6 @@ p.text-bold {
   margin-top: 7px;
 }
 
-.dropdown-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .block .dropdown {
   margin-bottom: 54.5px;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
@@ -271,5 +270,36 @@ p.text-bold {
 .arrow-position3 {
   margin-left: 245px;
   margin-top: 10px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.checkbox_blue {
+  border: 1px solid #BC9CFF;
+}
+
+.chkbx-wrap {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checked {
+  margin: 0px 0px 2px 4px;
 }
 /*# sourceMappingURL=formelements.css.map */

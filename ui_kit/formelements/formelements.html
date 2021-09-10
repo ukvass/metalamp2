@@ -78,6 +78,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.margin {
   margin-top: 122.5px;
 }
 
@@ -90,6 +93,12 @@ body {
   text-align: right;
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
+}
+
+.text-default_lowercase {
+  text-transform: inherit;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .text-bold {
@@ -256,16 +265,6 @@ p.text-bold {
   margin-top: 7px;
 }
 
-.dropdown-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .block .dropdown {
   margin-bottom: 54.5px;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
@@ -276,12 +275,43 @@ p.text-bold {
   margin-left: 245px;
   margin-top: 10px;
 }
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.checkbox_blue {
+  border: 1px solid #BC9CFF;
+}
+
+.chkbx-wrap {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checked {
+  margin: 0px 0px 2px 4px;
+}
 /*# sourceMappingURL=formelements.css.map */
     </style>
   </head>
   <body>
     <div class="circle"><img src="../colorsandtype/images/logo_1.svg"></div>
-    <div class="column">
+    <div class="column margin">
       <div class="block">
         <div class="text-wrap">
           <p class="text-bold">text field</p>
@@ -382,7 +412,7 @@ p.text-bold {
             <p class="text-bold">кровати</p>
             <p class="text-bold">ванные комнаты</p>
           </div>
-          <div class="dropdown-column">
+          <div class="column">
             <div class="counter-row">
               <div class="circle-button">
                 <div class="circle-button__minus"> </div>
@@ -423,6 +453,39 @@ p.text-bold {
         <div class="text-wrap">
           <p class="text-bold">expandable checkbox list</p>
           <button class="arrow arrow-position3"><img src="/ui_kit/headersandfooters/images/expand_more.svg"></button>
+        </div>
+      </div>
+      <div class="block">
+        <div class="text-wrap">
+          <p class="text-bold">expandable checkbox list</p>
+          <button class="arrow arrow-position3"><img src="/ui_kit/formelements/images/expand_more.svg"></button>
+        </div>
+        <div class="column"> 
+          <div class="row">
+            <div class="checkbox chkbx-wrap"></div>
+            <p class="text-default text-default_lowercase">Завтрак</p>
+          </div>
+          <div class="row">
+            <div class="checkbox checkbox_blue chkbx-wrap"><img class="checked" src="/ui_kit/formelements/images/checked.svg"></div>
+          </div>
+          <div class="row">
+            <div class="checkbox checkbox_blue chkbx-wrap"><img class="checked" src="/ui_kit/formelements/images/checked.svg"></div>
+          </div>
+          <div class="row">
+            <div class="checkbox checkbox_blue chkbx-wrap"><img class="checked" src="/ui_kit/formelements/images/checked.svg"></div>
+          </div>
+          <div class="row">
+            <div class="checkbox chkbx-wrap"></div>
+          </div>
+          <div class="row">
+            <div class="checkbox chkbx-wrap"></div>
+          </div>
+          <div class="row">
+            <div class="checkbox chkbx-wrap"></div>
+          </div>
+          <div class="row">
+            <div class="checkbox chkbx-wrap"></div>
+          </div>
         </div>
       </div>
     </div>
