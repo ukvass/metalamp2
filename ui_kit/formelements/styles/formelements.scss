@@ -240,7 +240,13 @@ p.text-bold {
 
 .row {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.margin .text-default{
+    margin-top: -3px;
+    margin-bottom: -2px;
 }
 
 .checked {

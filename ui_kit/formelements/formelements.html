@@ -298,9 +298,18 @@ p.text-bold {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.margin .text-default {
+  margin-top: -3px;
+  margin-bottom: -2px;
 }
 
 .checked {
@@ -463,28 +472,27 @@ p.text-bold {
         <div class="column"> 
           <div class="row">
             <div class="checkbox chkbx-wrap"></div>
-            <p class="text-default text-default_lowercase">Завтрак</p>
+            <p class="margin text-default text-default_lowercase">Завтрак</p>
           </div>
           <div class="row">
             <div class="checkbox checkbox_blue chkbx-wrap"><img class="checked" src="/ui_kit/formelements/images/checked.svg"></div>
+            <p class="margin text-default text-default_lowercase">Письменный стол</p>
           </div>
           <div class="row">
             <div class="checkbox checkbox_blue chkbx-wrap"><img class="checked" src="/ui_kit/formelements/images/checked.svg"></div>
+            <p class="margin text-default text-default_lowercase">Стул для кормления</p>
           </div>
           <div class="row">
             <div class="checkbox checkbox_blue chkbx-wrap"><img class="checked" src="/ui_kit/formelements/images/checked.svg"></div>
+            <p class="margin text-default text-default_lowercase">Кроватка</p>
           </div>
           <div class="row">
             <div class="checkbox chkbx-wrap"></div>
+            <p class="margin text-default text-default_lowercase">Телевизор</p>
           </div>
           <div class="row">
             <div class="checkbox chkbx-wrap"></div>
-          </div>
-          <div class="row">
-            <div class="checkbox chkbx-wrap"></div>
-          </div>
-          <div class="row">
-            <div class="checkbox chkbx-wrap"></div>
+            <p class="margin text-default text-default_lowercase">Шампунь</p>
           </div>
         </div>
       </div>
