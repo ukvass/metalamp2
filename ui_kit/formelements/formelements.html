@@ -95,12 +95,6 @@ body {
   color: rgba(31, 32, 65, 0.5);
 }
 
-.text-default_lowercase {
-  text-transform: inherit;
-  font-size: 14px;
-  line-height: 24px;
-}
-
 .text-bold {
   font-family: Montserrat;
   font-style: normal;
@@ -109,6 +103,12 @@ body {
   line-height: 15px;
   text-transform: uppercase;
   color: #1F2041;
+}
+
+.inherit-font {
+  text-transform: inherit;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .text-wrap {
@@ -123,7 +123,7 @@ body {
 }
 
 .text-wrap_medium {
-  max-width: 266px;
+  max-width: 280px;
 }
 
 .block {
@@ -203,6 +203,11 @@ body {
 p.text-bold {
   margin-left: 15px;
   margin-bottom: 22px;
+}
+
+p.text-bold-inherit {
+  margin-left: 15px;
+  margin-top: -5px;
 }
 
 .circle-button {
@@ -307,7 +312,7 @@ p.text-bold {
           align-items: flex-start;
 }
 
-.margin .text-default {
+.place {
   margin-top: -3px;
   margin-bottom: -2px;
 }
@@ -324,6 +329,7 @@ p.text-bold {
   width: 280px;
   height: 1px;
   background: rgba(31, 32, 65, 0.1);
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=formelements.css.map */
     </style>
@@ -482,42 +488,42 @@ p.text-bold {
         <div class="column"> 
           <div class="row">
             <div class="checkbox chkbx-wrap"></div>
-            <p class="margin text-default text-default_lowercase">Завтрак</p>
+            <p class="place text-default inherit-font">Завтрак</p>
           </div>
           <div class="row">
             <div class="checkbox checkbox_blue chkbx-wrap"><img class="checked" src="/ui_kit/formelements/images/checked.svg"></div>
-            <p class="margin text-default text-default_lowercase">Письменный стол</p>
+            <p class="place text-default inherit-font">Письменный стол</p>
           </div>
           <div class="row">
             <div class="checkbox checkbox_blue chkbx-wrap"><img class="checked" src="/ui_kit/formelements/images/checked.svg"></div>
-            <p class="margin text-default text-default_lowercase">Стул для кормления</p>
+            <p class="place text-default inherit-font">Стул для кормления</p>
           </div>
           <div class="row">
             <div class="checkbox checkbox_blue chkbx-wrap"><img class="checked" src="/ui_kit/formelements/images/checked.svg"></div>
-            <p class="margin text-default text-default_lowercase">Кроватка</p>
+            <p class="place text-default inherit-font">Кроватка</p>
           </div>
           <div class="row">
             <div class="checkbox chkbx-wrap"></div>
-            <p class="margin text-default text-default_lowercase">Телевизор</p>
+            <p class="place text-default inherit-font">Телевизор</p>
           </div>
           <div class="row">
             <div class="checkbox chkbx-wrap"></div>
-            <p class="margin text-default text-default_lowercase">Шампунь</p>
+            <p class="place text-default inherit-font">Шампунь</p>
           </div>
         </div>
       </div>
       <div class="block">
         <div class="row"><img src="/ui_kit/formelements/images/smile.svg" alt="">
-          <div class="column">
-            <p class="text-bold">Комфорт</p>
-            <p class="text-default text-default_lowercase">Шумопоглощающие стены</p>
+          <div>
+            <p class="text-bold inherit-font">Комфорт</p>
+            <p class="text-default inherit-font">Шумопоглощающие стены</p>
             <div class="separator"></div>
           </div>
         </div>
         <div class="row"><img src="/ui_kit/formelements/images/city.svg" alt="">
-          <div class="column">
-            <p class="text-bold">Удобство</p>
-            <p class="text-default text-default_lowercase">Окно в каждой из спален</p>
+          <div>
+            <p class="text-bold inherit-font">Удобство</p>
+            <p class="text-default inherit-font">Окно в каждой из спален</p>
             <div class="separator"></div>
           </div>
         </div>

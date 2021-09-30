@@ -91,12 +91,6 @@ body {
   color: rgba(31, 32, 65, 0.5);
 }
 
-.text-default_lowercase {
-  text-transform: inherit;
-  font-size: 14px;
-  line-height: 24px;
-}
-
 .text-bold {
   font-family: Montserrat;
   font-style: normal;
@@ -105,6 +99,12 @@ body {
   line-height: 15px;
   text-transform: uppercase;
   color: #1F2041;
+}
+
+.inherit-font {
+  text-transform: inherit;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .text-wrap {
@@ -119,7 +119,7 @@ body {
 }
 
 .text-wrap_medium {
-  max-width: 266px;
+  max-width: 280px;
 }
 
 .block {
@@ -199,6 +199,11 @@ body {
 p.text-bold {
   margin-left: 15px;
   margin-bottom: 22px;
+}
+
+p.text-bold-inherit {
+  margin-left: 15px;
+  margin-top: -5px;
 }
 
 .circle-button {
@@ -303,7 +308,7 @@ p.text-bold {
           align-items: flex-start;
 }
 
-.margin .text-default {
+.place {
   margin-top: -3px;
   margin-bottom: -2px;
 }
@@ -320,5 +325,6 @@ p.text-bold {
   width: 280px;
   height: 1px;
   background: rgba(31, 32, 65, 0.1);
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=formelements.css.map */

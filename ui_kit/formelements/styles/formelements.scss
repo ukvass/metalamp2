@@ -76,11 +76,6 @@ body {
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
-    &_lowercase {
-        text-transform: inherit;
-        font-size: 14px;
-        line-height: 24px;
-    }
 }
 
 .text-bold {
@@ -93,13 +88,20 @@ body {
     color: #1F2041;
 }
 
+.inherit-font {
+    text-transform: inherit;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
 .text-wrap {
     display: flex;
     justify-content: space-between;
     margin-bottom: -8px;
     margin-left: -15px;
     &_medium {
-        max-width: 266px;
+        max-width: 280px;
     }
 }
 
@@ -160,6 +162,11 @@ body {
 p.text-bold {
     margin-left: 15px;
     margin-bottom: 22px;
+}
+
+p.text-bold-inherit {
+    margin-left: 15px;
+    margin-top: -5px;
 }
 
 .circle-button {
@@ -244,7 +251,7 @@ p.text-bold {
     align-items: flex-start;
 }
 
-.margin .text-default{
+.place {
     margin-top: -3px;
     margin-bottom: -2px;
 }
@@ -261,4 +268,5 @@ p.text-bold {
     width: 280px;
     height: 1px;
     background: rgba(31, 32, 65, 0.1);
+    margin-bottom: 20px;
 }
