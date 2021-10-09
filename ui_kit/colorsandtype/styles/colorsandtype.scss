@@ -14,7 +14,6 @@
 	font-style: normal;
 }
 
-
 body {
     display: flex;
     margin: 0px auto;
@@ -33,35 +32,43 @@ body {
     margin-top: 145px;
 }
 
-.color-block {
+@mixin color-block($background:#1F2041) {
     width: 70px;
     height: 70px;
     border-radius: 6px;
     margin-bottom: 20px;
-    &_100-percent{
-        background: #1F2041;
-    }
-    &_75-percent{
-        background: rgba(31, 32, 65, 0.75);
-    }
-    &_50-percent{
-        background: rgba(31, 32, 65, 0.5);
-    }
-    &_25-percent{
-        background: rgba(31, 32, 65, 0.25);
-    }
-    &_5-percent{
-        background: rgba(31, 32, 65, 0.05);
-    }
-    &_purple{
-        background: #BC9CFF;
-    }
-    &_green{
-        background: #6FCF97;
-    }
+    background:$background;
 }
 
-.text-block {
+.color-block {
+    @include color-block()
+}
+
+.color-block_75 {
+    @include color-block(rgba(31, 32, 65, 0.75));
+}
+
+.color-block_50{
+    @include color-block(rgba(31, 32, 65, 0.5));
+}
+
+.color-block_25{
+    @include color-block(rgba(31, 32, 65, 0.25));
+}
+
+.color-block_5{
+    @include color-block(rgba(31, 32, 65, 0.05));
+}
+
+.color-block_purple{
+    @include color-block(#BC9CFF);
+}
+
+.color-block_green{
+    @include color-block(#6FCF97);
+}
+
+.text-block-margin {
     margin-top: 132px;
     margin-left: 40px;
 }
@@ -129,29 +136,33 @@ body {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    &_h1 {
+}
+
+.h1-font {
         width: 369px;
         font-size: 24px;
         line-height: 29px;
         margin-bottom: 51px;
     }
-    &_h2 {
+
+.h2-font {
         width: 312px;
         font-size: 19px;
         line-height: 23px;
         margin-bottom: 51px;
-    }
-    &_h3 {
+}
+
+.h3-font {
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
         margin-bottom: 48px;
-    }
-    &_body {
+}
+
+.body-font {
         width: 301px;
         font-weight: normal;
         font-size: 14px;
         line-height: 24px;
         color: rgba(31, 32, 65, 0.75);
-    }
 }

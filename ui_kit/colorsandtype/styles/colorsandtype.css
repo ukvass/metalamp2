@@ -40,37 +40,58 @@ body {
   height: 70px;
   border-radius: 6px;
   margin-bottom: 20px;
-}
-
-.color-block_100-percent {
   background: #1F2041;
 }
 
-.color-block_75-percent {
+.color-block_75 {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-bottom: 20px;
   background: rgba(31, 32, 65, 0.75);
 }
 
-.color-block_50-percent {
+.color-block_50 {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-bottom: 20px;
   background: rgba(31, 32, 65, 0.5);
 }
 
-.color-block_25-percent {
+.color-block_25 {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-bottom: 20px;
   background: rgba(31, 32, 65, 0.25);
 }
 
-.color-block_5-percent {
+.color-block_5 {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-bottom: 20px;
   background: rgba(31, 32, 65, 0.05);
 }
 
 .color-block_purple {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-bottom: 20px;
   background: #BC9CFF;
 }
 
 .color-block_green {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-bottom: 20px;
   background: #6FCF97;
 }
 
-.text-block {
+.text-block-margin {
   margin-top: 132px;
   margin-left: 40px;
 }
@@ -144,28 +165,28 @@ body {
   font-weight: bold;
 }
 
-.title-block_h1 {
+.h1-font {
   width: 369px;
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 51px;
 }
 
-.title-block_h2 {
+.h2-font {
   width: 312px;
   font-size: 19px;
   line-height: 23px;
   margin-bottom: 51px;
 }
 
-.title-block_h3 {
+.h3-font {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   margin-bottom: 48px;
 }
 
-.title-block_body {
+.body-font {
   width: 301px;
   font-weight: normal;
   font-size: 14px;
