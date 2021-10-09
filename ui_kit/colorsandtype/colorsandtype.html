@@ -45,6 +45,7 @@ body {
   border-radius: 6px;
   margin-bottom: 20px;
   background: #1F2041;
+  opacity: 1;
 }
 
 .color-block_75 {
@@ -52,7 +53,8 @@ body {
   height: 70px;
   border-radius: 6px;
   margin-bottom: 20px;
-  background: rgba(31, 32, 65, 0.75);
+  background: #1F2041;
+  opacity: 0.75;
 }
 
 .color-block_50 {
@@ -60,7 +62,8 @@ body {
   height: 70px;
   border-radius: 6px;
   margin-bottom: 20px;
-  background: rgba(31, 32, 65, 0.5);
+  background: #1F2041;
+  opacity: 0.5;
 }
 
 .color-block_25 {
@@ -68,7 +71,8 @@ body {
   height: 70px;
   border-radius: 6px;
   margin-bottom: 20px;
-  background: rgba(31, 32, 65, 0.25);
+  background: #1F2041;
+  opacity: 0.25;
 }
 
 .color-block_5 {
@@ -76,7 +80,8 @@ body {
   height: 70px;
   border-radius: 6px;
   margin-bottom: 20px;
-  background: rgba(31, 32, 65, 0.05);
+  background: #1F2041;
+  opacity: 0.05;
 }
 
 .color-block_purple {
@@ -85,6 +90,7 @@ body {
   border-radius: 6px;
   margin-bottom: 20px;
   background: #BC9CFF;
+  opacity: 1;
 }
 
 .color-block_green {
@@ -93,6 +99,7 @@ body {
   border-radius: 6px;
   margin-bottom: 20px;
   background: #6FCF97;
+  opacity: 1;
 }
 
 .text-block-margin {
@@ -129,73 +136,72 @@ body {
 }
 
 .header-block_h1 {
-  width: 29px;
-  height: 30px;
   font-size: 24px;
   line-height: 29px;
+  width: 29px;
+  height: 30px;
   margin-bottom: 80px;
 }
 
 .header-block_h2 {
-  width: 27px;
-  height: 24px;
   font-size: 19px;
   line-height: 23px;
+  width: 27px;
+  height: 24px;
   margin-bottom: 74px;
   margin-left: 4px;
 }
 
 .header-block_h3 {
-  width: 17px;
-  height: 15px;
   font-size: 12px;
   line-height: 15px;
+  width: 17px;
+  height: 15px;
   margin-bottom: 46px;
   margin-left: 14px;
 }
 
 .header-block_body {
-  width: 37px;
-  height: 24px;
   font-size: 14px;
   line-height: 24px;
+  width: 37px;
+  height: 24px;
 }
 
 .title-block {
-  margin-left: 24px;
-  margin-top: 132px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
+  margin-left: 24px;
+  margin-top: 132px;
 }
 
-.h1-font {
-  width: 369px;
+.h1-block {
   font-size: 24px;
   line-height: 29px;
+  width: 369px;
   margin-bottom: 51px;
 }
 
-.h2-font {
-  width: 312px;
+.h2-block {
   font-size: 19px;
   line-height: 23px;
+  width: 312px;
   margin-bottom: 51px;
 }
 
-.h3-font {
+.h3-block {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   margin-bottom: 48px;
 }
 
-.body-font {
-  width: 301px;
-  font-weight: normal;
+.body-block {
   font-size: 14px;
   line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
+  width: 301px;
+  opacity: 0.75;
 }
 /*# sourceMappingURL=colorsandtype.css.map */
     </style>
@@ -240,11 +246,11 @@ body {
       <p class="header-block_h3">H3</p>
       <p class="header-block_body">Body</p>
     </div>
-    <div class="title-block"> 
-      <p class="h1-font">This one is the sub-section or widget title</p>
-      <p class="h2-font">Next one is the item title inside widgets</p>
-      <p class="h3-font">This is a label or CTA text</p>
-      <p class="body-font">This is the body text which is used for most of the design, like paragraphs, lists, etc.</p>
+    <div class="title-block title-block__font"> 
+      <p class="h1-block">This one is the sub-section or widget title</p>
+      <p class="h2-block">Next one is the item title inside widgets</p>
+      <p class="h3-block">This is a label or CTA text</p>
+      <p class="body-block">This is the body text which is used for most of the design, like paragraphs, lists, etc.</p>
     </div>
   </body>
 </html>

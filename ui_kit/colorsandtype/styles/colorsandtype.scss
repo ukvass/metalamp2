@@ -32,40 +32,41 @@ body {
     margin-top: 145px;
 }
 
-@mixin color-block($background:#1F2041) {
+@mixin color-block($opacity: 1, $background:#1F2041) {
     width: 70px;
     height: 70px;
     border-radius: 6px;
     margin-bottom: 20px;
     background:$background;
+    opacity: $opacity;
 }
 
 .color-block {
-    @include color-block()
+    @include color-block();
 }
 
 .color-block_75 {
-    @include color-block(rgba(31, 32, 65, 0.75));
+    @include color-block(0.75);
 }
 
 .color-block_50{
-    @include color-block(rgba(31, 32, 65, 0.5));
+    @include color-block(0.5);
 }
 
 .color-block_25{
-    @include color-block(rgba(31, 32, 65, 0.25));
+    @include color-block(0.25);
 }
 
 .color-block_5{
-    @include color-block(rgba(31, 32, 65, 0.05));
+    @include color-block(0.05);
 }
 
 .color-block_purple{
-    @include color-block(#BC9CFF);
+    @include color-block(1, #BC9CFF);
 }
 
 .color-block_green{
-    @include color-block(#6FCF97);
+    @include color-block(1, #6FCF97);
 }
 
 .text-block-margin {
@@ -73,96 +74,105 @@ body {
     margin-left: 40px;
 }
 
-.text1 {
+@mixin mainFont($fontW: normal) {
     font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
+    font-weight: $fontW;
+}
+
+.text1 {
+    @include mainFont(bold);
     font-size: 19px;
     line-height: 28px;
     margin-bottom: 0px;
 }
 
 .text2 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
+    @include mainFont();
     font-size: 19px;
     line-height: 28px;
     margin-top: 0px;
     margin-bottom: 34px;
 }
 
+@mixin h1-font() {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+@mixin h2-font() {
+    font-size: 19px;
+    line-height: 23px;
+}
+
+@mixin h3-font() {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+@mixin body-font() {
+    font-size: 14px;
+    line-height: 24px;
+}
+
 .header-block {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
+    @include mainFont();
     margin-left: 423px;
     margin-top: 132px;
     color: rgba(31, 32, 65, 0.25);
     &_h1 {
+        @include h1-font();
         width: 29px;
         height: 30px;
-        font-size: 24px;
-        line-height: 29px;
         margin-bottom: 80px;
     }
     &_h2 {
+        @include h2-font();
         width: 27px;
         height: 24px;
-        font-size: 19px;
-        line-height: 23px;
         margin-bottom: 74px;
         margin-left: 4px;
     }
     &_h3 {
+        @include h3-font();
         width: 17px;
         height: 15px;
-        font-size: 12px;
-        line-height: 15px;
         margin-bottom: 46px;
         margin-left: 14px;
     }
     &_body {
+        @include body-font();
         width: 37px;
         height: 24px;
-        font-size: 14px;
-        line-height: 24px;
     }
 }
 
 .title-block {
+    @include mainFont(bold);
     margin-left: 24px;
     margin-top: 132px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
 }
 
-.h1-font {
-        width: 369px;
-        font-size: 24px;
-        line-height: 29px;
-        margin-bottom: 51px;
-    }
-
-.h2-font {
-        width: 312px;
-        font-size: 19px;
-        line-height: 23px;
-        margin-bottom: 51px;
+.h1-block {
+    @include h1-font();
+    width: 369px;
+    margin-bottom: 51px;
 }
 
-.h3-font {
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
-        margin-bottom: 48px;
+.h2-block {
+    @include h2-font();
+    width: 312px;
+    margin-bottom: 51px;
 }
 
-.body-font {
-        width: 301px;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-        color: rgba(31, 32, 65, 0.75);
+.h3-block {
+    @include h3-font();
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+.body-block {
+    @include body-font();
+    width: 301px;
+    opacity: 0.75;
 }
