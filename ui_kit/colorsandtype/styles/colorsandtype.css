@@ -16,6 +16,7 @@
 }
 
 body {
+  font-family: Montserrat, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,18 +25,30 @@ body {
 }
 
 .circle {
+  margin: 30px 0px 0px 30px;
   width: 42px;
   height: 42px;
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
-.blocks {
-  margin-left: 72px;
-  margin-top: 145px;
+.color-blocks {
+  margin: 145px 0px 0px 72px;
+  width: 282px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.color-block {
+.color-blocks__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.color-blocks__item_100 {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -44,7 +57,7 @@ body {
   opacity: 1;
 }
 
-.color-block_75 {
+.color-blocks__item_75 {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -53,7 +66,7 @@ body {
   opacity: 0.75;
 }
 
-.color-block_50 {
+.color-blocks__item_50 {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -62,7 +75,7 @@ body {
   opacity: 0.5;
 }
 
-.color-block_25 {
+.color-blocks__item_25 {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -71,7 +84,7 @@ body {
   opacity: 0.25;
 }
 
-.color-block_5 {
+.color-blocks__item_5 {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -80,7 +93,7 @@ body {
   opacity: 0.05;
 }
 
-.color-block_purple {
+.color-blocks__item_purple {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -89,7 +102,7 @@ body {
   opacity: 1;
 }
 
-.color-block_green {
+.color-blocks__item_green {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -98,34 +111,18 @@ body {
   opacity: 1;
 }
 
-.text-block-margin {
-  margin-top: 132px;
-  margin-left: 40px;
-}
-
-.text1 {
-  font-family: Montserrat;
-  font-style: normal;
+.color-blocks__name {
   font-weight: bold;
+  margin: 9px 0px 0px 40px;
   font-size: 19px;
   line-height: 28px;
-  margin-bottom: 0px;
 }
 
-.text2 {
-  font-family: Montserrat;
-  font-style: normal;
+.color-blocks__name_thin {
   font-weight: normal;
-  font-size: 19px;
-  line-height: 28px;
-  margin-top: 0px;
-  margin-bottom: 34px;
 }
 
 .header-block {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   margin-left: 423px;
   margin-top: 132px;
   color: rgba(31, 32, 65, 0.25);
@@ -165,8 +162,6 @@ body {
 }
 
 .title-block {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: bold;
   margin-left: 24px;
   margin-top: 132px;

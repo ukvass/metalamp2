@@ -20,6 +20,7 @@
 }
 
 body {
+  font-family: Montserrat, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,18 +29,30 @@ body {
 }
 
 .circle {
+  margin: 30px 0px 0px 30px;
   width: 42px;
   height: 42px;
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
-.blocks {
-  margin-left: 72px;
-  margin-top: 145px;
+.color-blocks {
+  margin: 145px 0px 0px 72px;
+  width: 282px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.color-block {
+.color-blocks__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.color-blocks__item_100 {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -48,7 +61,7 @@ body {
   opacity: 1;
 }
 
-.color-block_75 {
+.color-blocks__item_75 {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -57,7 +70,7 @@ body {
   opacity: 0.75;
 }
 
-.color-block_50 {
+.color-blocks__item_50 {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -66,7 +79,7 @@ body {
   opacity: 0.5;
 }
 
-.color-block_25 {
+.color-blocks__item_25 {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -75,7 +88,7 @@ body {
   opacity: 0.25;
 }
 
-.color-block_5 {
+.color-blocks__item_5 {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -84,7 +97,7 @@ body {
   opacity: 0.05;
 }
 
-.color-block_purple {
+.color-blocks__item_purple {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -93,7 +106,7 @@ body {
   opacity: 1;
 }
 
-.color-block_green {
+.color-blocks__item_green {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -102,34 +115,18 @@ body {
   opacity: 1;
 }
 
-.text-block-margin {
-  margin-top: 132px;
-  margin-left: 40px;
-}
-
-.text1 {
-  font-family: Montserrat;
-  font-style: normal;
+.color-blocks__name {
   font-weight: bold;
+  margin: 9px 0px 0px 40px;
   font-size: 19px;
   line-height: 28px;
-  margin-bottom: 0px;
 }
 
-.text2 {
-  font-family: Montserrat;
-  font-style: normal;
+.color-blocks__name_thin {
   font-weight: normal;
-  font-size: 19px;
-  line-height: 28px;
-  margin-top: 0px;
-  margin-bottom: 34px;
 }
 
 .header-block {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   margin-left: 423px;
   margin-top: 132px;
   color: rgba(31, 32, 65, 0.25);
@@ -169,8 +166,6 @@ body {
 }
 
 .title-block {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: bold;
   margin-left: 24px;
   margin-top: 132px;
@@ -209,49 +204,60 @@ body {
   </head>
   <body>
     <div class="circle"><img src="images/logo_1.svg"></div>
-    <div class="blocks">
-      <div class="color-block"></div>
-      <div class="color-block_75"></div>
-      <div class="color-block_50"></div>
-      <div class="color-block_25"></div>
-      <div class="color-block_5"></div>
-      <div class="color-block_purple"></div>
-      <div class="color-block_green"></div>
-    </div>
-    <div class="text-block-margin">
-      <p class="text1">Dark Shade 100%
-        <p class="text2">#1F2041</p>
-      </p>
-      <p class="text1">Dark Shade 75%
-        <p class="text2">#1F2041</p>
-      </p>
-      <p class="text1">Dark Shade 50%
-        <p class="text2">#1F2041</p>
-      </p>
-      <p class="text1">Dark Shade 25%
-        <p class="text2">#1F2041</p>
-      </p>
-      <p class="text1">Dark Shade 5%
-        <p class="text2">#1F2041</p>
-      </p>
-      <p class="text1">Purple
-        <p class="text2">#BC9CFF</p>
-      </p>
-      <p class="text1">Green
-        <p class="text2">#6FCF97</p>
-      </p>
-    </div>
-    <div class="header-block">
-      <p class="header-block_h1">H1</p>
-      <p class="header-block_h2">H2</p>
-      <p class="header-block_h3">H3</p>
-      <p class="header-block_body">Body</p>
-    </div>
-    <div class="title-block title-block__font"> 
-      <p class="h1-block">This one is the sub-section or widget title</p>
-      <p class="h2-block">Next one is the item title inside widgets</p>
-      <p class="h3-block">This is a label or CTA text</p>
-      <p class="body-block">This is the body text which is used for most of the design, like paragraphs, lists, etc.</p>
+    <div class="color-blocks">
+      <div class="color-blocks__item">
+        <div class="color-blocks__item_100"></div>
+        <div class="color-blocks__name">Dark Shade 100%
+          <div class="color-blocks__name_thin">#1F2041</div>
+        </div>
+      </div>
+      <div class="color-blocks__item">
+        <div class="color-blocks__item_75"></div>
+        <div class="color-blocks__name">Dark Shade 75%
+          <div class="color-blocks__name_thin">#1F2041</div>
+        </div>
+      </div>
+      <div class="color-blocks__item">
+        <div class="color-blocks__item_50"></div>
+        <div class="color-blocks__name">Dark Shade 50%
+          <div class="color-blocks__name_thin">#1F2041</div>
+        </div>
+      </div>
+      <div class="color-blocks__item">
+        <div class="color-blocks__item_25"></div>
+        <div class="color-blocks__name">Dark Shade 25%
+          <div class="color-blocks__name_thin">#1F2041</div>
+        </div>
+      </div>
+      <div class="color-blocks__item">
+        <div class="color-blocks__item_5"></div>
+        <div class="color-blocks__name">Dark Shade 5%
+          <div class="color-blocks__name_thin">#1F2041</div>
+        </div>
+      </div>
+      <div class="color-blocks__item">
+        <div class="color-blocks__item_purple"></div>
+        <div class="color-blocks__name">Purple
+          <div class="color-blocks__name_thin">#BC9CFF</div>
+        </div>
+      </div>
+      <div class="color-blocks__item">
+        <div class="color-blocks__item_green"></div>
+        <div class="color-blocks__name">Green
+          <div class="color-blocks__name_thin">#6FCF97</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
+<!--    .header-block
+  .header-block_h1 H1
+  .header-block_h2 H2
+  .header-block_h3 H3
+  .header-block_body Body
+.title-block.title-block__font 
+  .h1-block This one is the sub-section or widget title
+  .h2-block Next one is the item title inside widgets
+  .h3-block This is a label or CTA text
+  .body-block This is the body text which is used for most of the design, like paragraphs, lists, etc.
+-->
