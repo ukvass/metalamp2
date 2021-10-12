@@ -27,15 +27,6 @@ body {
     height: 42px;
 }
 
-@mixin color-block($opacity: 1, $background:#1F2041) {
-    width: 70px;
-    height: 70px;
-    border-radius: 6px;
-    margin-bottom: 20px;
-    background:$background;
-    opacity: $opacity;
-}
-
 .color-blocks {
     margin: 145px 0px 0px 72px;
     width: 282px;
@@ -43,26 +34,30 @@ body {
     flex-direction: column;
     &__item {
         display: flex;
-        &_100 {
-            @include color-block();
-        }
+    }
+    &__block{
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        background:#1F2041;
         &_75 {
-            @include color-block(0.75);
+            opacity: 0.75;
         }
         &_50 {
-            @include color-block(0.5);
+            opacity: 0.5;
         }
         &_25 {
-            @include color-block(0.25);
+            opacity: 0.25;
         }
         &_5 {
-            @include color-block(0.05);
+            opacity: 0.05;
         }
         &_purple {
-            @include color-block(1, #BC9CFF);
+            background: #BC9CFF;
         }
         &_green {
-            @include color-block(1, #6FCF97);
+            background:#6FCF97;
         }
     }
     &__name {
@@ -70,9 +65,9 @@ body {
         margin: 9px 0px 0px 40px;    
         font-size: 19px;    
         line-height: 28px;
-        &_thin {
-            font-weight: normal;
-        }
+    }
+    &__codename {
+        font-weight: normal;
     }
 }
 

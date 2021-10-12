@@ -48,67 +48,36 @@ body {
   display: flex;
 }
 
-.color-blocks__item_100 {
+.color-blocks__block {
   width: 70px;
   height: 70px;
   border-radius: 6px;
   margin-bottom: 20px;
   background: #1F2041;
-  opacity: 1;
 }
 
-.color-blocks__item_75 {
-  width: 70px;
-  height: 70px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  background: #1F2041;
+.color-blocks__block_75 {
   opacity: 0.75;
 }
 
-.color-blocks__item_50 {
-  width: 70px;
-  height: 70px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  background: #1F2041;
+.color-blocks__block_50 {
   opacity: 0.5;
 }
 
-.color-blocks__item_25 {
-  width: 70px;
-  height: 70px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  background: #1F2041;
+.color-blocks__block_25 {
   opacity: 0.25;
 }
 
-.color-blocks__item_5 {
-  width: 70px;
-  height: 70px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  background: #1F2041;
+.color-blocks__block_5 {
   opacity: 0.05;
 }
 
-.color-blocks__item_purple {
-  width: 70px;
-  height: 70px;
-  border-radius: 6px;
-  margin-bottom: 20px;
+.color-blocks__block_purple {
   background: #BC9CFF;
-  opacity: 1;
 }
 
-.color-blocks__item_green {
-  width: 70px;
-  height: 70px;
-  border-radius: 6px;
-  margin-bottom: 20px;
+.color-blocks__block_green {
   background: #6FCF97;
-  opacity: 1;
 }
 
 .color-blocks__name {
@@ -118,7 +87,7 @@ body {
   line-height: 28px;
 }
 
-.color-blocks__name_thin {
+.color-blocks__codename {
   font-weight: normal;
 }
 
