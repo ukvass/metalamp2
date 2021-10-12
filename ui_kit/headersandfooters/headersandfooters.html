@@ -23,28 +23,32 @@ body {
   background: #E5E5E5;
   margin: 0px auto;
   max-width: 1440px;
+  font-family: Montserrat, sans-serif;
 }
 
 .circle {
-  width: 42px;
-  height: 42px;
   margin-left: 30px;
   margin-top: 30px;
 }
 
 .header {
-  width: 1440px;
+  max-width: 1440px;
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
           box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .wrap .header {
-  margin-top: 62px;
+  margin-top: 52px;
 }
 
 .wrap2 .header {
@@ -56,19 +60,15 @@ body {
 }
 
 .logo {
-  margin-left: 140px;
-  margin-top: 15px;
+  margin-left: 106px;
 }
 
 .nav {
-  font-family: Montserrat, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 14px;
   line-height: 17px;
-  font-style: normal;
-  list-style: none;
 }
 
 .nav__item {
@@ -81,7 +81,6 @@ body {
 }
 
 .nav_thin {
-  font-weight: normal;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -90,14 +89,8 @@ body {
   color: rgba(31, 32, 65, 0.75);
 }
 
-.wrap .nav {
-  margin-left: 225px;
-  margin-top: 26px;
-}
-
 .wrap2 .nav {
   margin-left: 406px;
-  margin-top: 26px;
 }
 
 .login-btn {
@@ -123,7 +116,6 @@ body {
   border-color: #BC9CFF;
   border-radius: 22px;
   margin-left: 18px;
-  margin-top: 18px;
 }
 
 .btn-text {
@@ -337,16 +329,14 @@ body {
     <div class="wrap">
       <div class="header">
         <div class="logo"><img src="images/logo.svg"></div>
-        <div class="wrap"> 
-          <ul class="nav">
-            <li class="nav__item nav_bold">О нас</li>
-            <li class="nav__item nav_thin">Услуги</li>
-            <li class="nav__link"><img src="images/expand_more.svg"></li>
-            <li class="nav__item nav_thin">Вакансии</li>
-            <li class="nav__item nav_thin">Новости</li>
-            <li class="nav__item nav_thin">Соглашения</li>
-            <li class="nav__link"><img src="images/expand_more.svg"></li>
-          </ul>
+        <div class="nav">
+          <div class="nav__item nav_bold">О нас</div>
+          <div class="nav__item nav_thin">Услуги</div>
+          <div class="nav__link"><img src="images/expand_more.svg"></div>
+          <div class="nav__item nav_thin">Вакансии</div>
+          <div class="nav__item nav_thin">Новости</div>
+          <div class="nav__item nav_thin">Соглашения</div>
+          <div class="nav__link"><img src="images/expand_more.svg"></div>
         </div>
         <div class="wrap">
           <button class="login-btn">
@@ -358,88 +348,88 @@ body {
         </div>
       </div>
     </div>
-    <div class="wrap2">
-      <div class="header">
-        <div class="logo"><img src="images/logo.svg"></div>
-        <div class="wrap2"> 
-          <ul class="nav">
-            <li class="nav__item nav_bold">О нас</li>
-            <li class="nav__item nav_thin">Услуги</li>
-            <li class="nav__link"><img src="images/expand_more.svg"></li>
-            <li class="nav__item nav_thin">Вакансии</li>
-            <li class="nav__item nav_thin">Новости</li>
-            <li class="nav__item nav_thin">Соглашения</li>
-            <li class="nav__link"><img src="images/expand_more.svg"></li>
-          </ul>
-        </div>
-        <div class="border"></div>
-        <p class="cesar">Юлий Цезарь</p>
-      </div>
-    </div>
-    <div class="wrap">
-      <div class="footer">
-        <div class="container">
-          <div class="logo-foot"><img src="images/logo.svg"></div>
-          <p class="text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
-        </div>
-        <div class="container">
-          <ul class="footer-list">
-            <li class="footer-list__item footer-list_head">Навигация</li>
-            <li class="footer-list__item">О нас</li>
-            <li class="footer-list__item">Новости</li>
-            <li class="footer-list__item">Служба поддержки</li>
-            <li class="footer-list__item">Услуги</li>
-          </ul>
-        </div>
-        <div class="container2">
-          <ul class="footer-list">
-            <li class="footer-list__item footer-list_head">О нас</li>
-            <li class="footer-list__item">О сервисе</li>
-            <li class="footer-list__item">Наша команда</li>
-            <li class="footer-list__item">Вакансии</li>
-            <li class="footer-list__item">Инвесторы</li>
-          </ul>
-        </div>
-        <div class="container3">
-          <ul class="footer-list">
-            <li class="footer-list__item footer-list_head">Служба поддержки</li>
-            <li class="footer-list__item">Соглашения</li>
-            <li class="footer-list__item">Сообщества</li>
-            <li class="footer-list__item">Связь с нами</li>
-          </ul>
-        </div>
-        <div class="container4">
-          <ul class="footer-list footer-list__subscribe">
-            <li class="footer-list__item footer-list_head">Подписка</li>
-            <li class="footer-list__item footer-list_news">Получайте специальные предложения и новости сервиса</li>
-            <div class="input">
-              <input class="input" type="text" name="" value="   Email" button="">
-              <button class="arrow"><img src="images/arrow_forward.svg"></button>
-            </div>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="wrap3"> 
-      <div class="header">       
-        <div class="wrap"> 
-          <p class="copyright-text">Copyright © 2018 Toxin отель. Все права защищены.</p>
-        </div>
-        <div class="wrap"> 
-          <div class="social"><a href="#"> <img src="images/twitter.svg" alt=""></a><a href="#"> <img src="images/facebook.svg" alt=""></a><a href="#"> <img src="images/instagram.svg" alt=""></a></div>
-        </div>
-      </div>
-    </div>
-    <div class="wrap"> 
-      <div class="footer-mobile">
-        <div class="logo-mobfoot"><img src="images/logo.svg"></div>
-        <div class="wrap2"> 
-          <p class="copyright-text">Copyright © 2018 Toxin отель. Все права защищены.</p>
-        </div>
-        <div class="wrap2"> 
-          <div class="social"><a href="#"> <img src="images/twitter.svg" alt=""></a><a href="#"> <img src="images/facebook.svg" alt=""></a><a href="#"> <img src="images/instagram.svg" alt=""></a></div>
-        </div>
-      </div>
-    </div>
   </body>
 </html>
+<!--    .wrap2
+  .header
+    .logo
+      img(src="images/logo.svg")
+    .wrap2 
+      ul.nav
+        li.nav__item.nav_bold О нас
+        li.nav__item.nav_thin Услуги
+        li.nav__link
+          img(src='images/expand_more.svg')
+        li.nav__item.nav_thin Вакансии
+        li.nav__item.nav_thin Новости
+        li.nav__item.nav_thin Соглашения
+        li.nav__link
+          img(src='images/expand_more.svg')
+    .border
+    p.cesar Юлий Цезарь
+.wrap
+  .footer
+    .container
+      .logo-foot
+        img(src="images/logo.svg")
+      p.text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+    .container
+      ul.footer-list
+        li.footer-list__item.footer-list_head Навигация
+        li.footer-list__item О нас
+        li.footer-list__item Новости
+        li.footer-list__item Служба поддержки
+        li.footer-list__item Услуги
+    .container2
+      ul.footer-list
+        li.footer-list__item.footer-list_head О нас
+        li.footer-list__item О сервисе
+        li.footer-list__item Наша команда
+        li.footer-list__item Вакансии
+        li.footer-list__item Инвесторы
+    .container3
+      ul.footer-list
+        li.footer-list__item.footer-list_head Служба поддержки
+        li.footer-list__item Соглашения
+        li.footer-list__item Сообщества
+        li.footer-list__item Связь с нами
+    .container4
+      ul.footer-list.footer-list__subscribe
+        li.footer-list__item.footer-list_head Подписка
+        li.footer-list__item.footer-list_news Получайте специальные предложения и новости сервиса
+        .input
+          input.input(
+          type='text'
+          name=''
+          value='   Email'
+          button=''       
+        )
+          button.arrow
+            img(src='images/arrow_forward.svg')
+.wrap3 
+  .header        
+    .wrap  
+      p.copyright-text Copyright © 2018 Toxin отель. Все права защищены.
+    .wrap 
+      .social
+        a(href="#") 
+          img(src="images/twitter.svg", alt="")
+        a(href="#") 
+          img(src="images/facebook.svg", alt="")
+        a(href="#") 
+          img(src="images/instagram.svg", alt="")
+.wrap 
+  .footer-mobile
+    .logo-mobfoot
+      img(src="images/logo.svg")
+    .wrap2  
+      p.copyright-text Copyright © 2018 Toxin отель. Все права защищены.
+    .wrap2  
+      .social
+        a(href="#") 
+          img(src="images/twitter.svg", alt="")
+        a(href="#") 
+          img(src="images/facebook.svg", alt="")
+        a(href="#") 
+          img(src="images/instagram.svg", alt="")
+-->
