@@ -49,7 +49,7 @@ body {
 }
 
 .color-blocks__block {
-  width: 70px;
+  min-width: 70px;
   height: 70px;
   border-radius: 6px;
   margin-bottom: 20px;
@@ -91,77 +91,65 @@ body {
   font-weight: normal;
 }
 
-.header-block {
-  margin-left: 423px;
-  margin-top: 132px;
+.header-blocks {
+  margin: 145px 0px 0px 423px;
   color: rgba(31, 32, 65, 0.25);
 }
 
-.header-block_h1 {
+.header-blocks__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-blocks__block-h1 {
   font-size: 24px;
   line-height: 29px;
-  width: 29px;
-  height: 30px;
-  margin-bottom: 80px;
 }
 
-.header-block_h2 {
-  font-size: 19px;
-  line-height: 23px;
-  width: 27px;
-  height: 24px;
-  margin-bottom: 74px;
-  margin-left: 4px;
-}
-
-.header-block_h3 {
-  font-size: 12px;
-  line-height: 15px;
-  width: 17px;
-  height: 15px;
-  margin-bottom: 46px;
-  margin-left: 14px;
-}
-
-.header-block_body {
-  font-size: 14px;
-  line-height: 24px;
-  width: 37px;
-  height: 24px;
-}
-
-.title-block {
+.header-blocks__block-h1_bold {
   font-weight: bold;
-  margin-left: 24px;
-  margin-top: 132px;
+  width: 370px;
+  margin: 0px 0px 53px 30px;
+  color: #1F2041;
 }
 
-.h1-block {
-  font-size: 24px;
-  line-height: 29px;
-  width: 369px;
-  margin-bottom: 51px;
-}
-
-.h2-block {
+.header-blocks__block-h2 {
   font-size: 19px;
   line-height: 23px;
-  width: 312px;
-  margin-bottom: 51px;
+  margin: 0px 0px 75px 2px;
 }
 
-.h3-block {
+.header-blocks__block-h2_bold {
+  font-weight: bold;
+  width: 312px;
+  margin: 0px 0px 51px 30px;
+  color: #1F2041;
+}
+
+.header-blocks__block-h3 {
   font-size: 12px;
   line-height: 15px;
-  text-transform: uppercase;
-  margin-bottom: 48px;
+  margin: 0px 0px 45px 13px;
 }
 
-.body-block {
+.header-blocks__block-h3_uppercase-bold {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0px 0px 47px 30px;
+  color: #1F2041;
+}
+
+.header-blocks__block-body {
   font-size: 14px;
   line-height: 24px;
+  margin-left: -7px;
+}
+
+.header-blocks__block-body_transparent {
+  margin: 0px 0px 0px 30px;
   width: 301px;
+  color: #1F2041;
   opacity: 0.75;
-  font-weight: normal;
 }
 /*# sourceMappingURL=colorsandtype.css.map */

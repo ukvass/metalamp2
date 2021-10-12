@@ -7,6 +7,7 @@ html(lang="en")
   body
     .circle
       img(src="images/logo_1.svg")
+  
     .color-blocks
       .color-blocks__item
         .color-blocks__block
@@ -37,13 +38,16 @@ html(lang="en")
         .color-blocks__name Green
           .color-blocks__codename #6FCF97
     
-//    .header-block
-      .header-block_h1 H1
-      .header-block_h2 H2
-      .header-block_h3 H3
-      .header-block_body Body
-    .title-block.title-block__font 
-      .h1-block This one is the sub-section or widget title
-      .h2-block Next one is the item title inside widgets
-      .h3-block This is a label or CTA text
-      .body-block This is the body text which is used for most of the design, like paragraphs, lists, etc.
+    .header-blocks
+      .header-blocks__item
+        .header-blocks__block-h1 H1
+        .header-blocks__block-h1.header-blocks__block-h1_bold This one is the sub-section or widget title
+      .header-blocks__item
+        .header-blocks__block-h2 H2
+        .header-blocks__block-h2.header-blocks__block-h2_bold Next one is the item title inside widgets
+      .header-blocks__item
+        .header-blocks__block-h3 H3
+        .header-blocks__block-h3.header-blocks__block-h3_uppercase-bold This is a label or CTA text
+      .header-blocks__item
+        .header-blocks__block-body Body
+        .header-blocks__block-body.header-blocks__block-body_transparent This is the body text which is used for most of the design, like paragraphs, lists, etc.

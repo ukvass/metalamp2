@@ -36,7 +36,7 @@ body {
         display: flex;
     }
     &__block{
-        width: 70px;
+        min-width: 70px;
         height: 70px;
         border-radius: 6px;
         margin-bottom: 20px;
@@ -71,84 +71,53 @@ body {
     }
 }
 
-@mixin h1-font() {
-    font-size: 24px;
-    line-height: 29px;
-}
-
-@mixin h2-font() {
-    font-size: 19px;
-    line-height: 23px;
-}
-
-@mixin h3-font() {
-    font-size: 12px;
-    line-height: 15px;
-}
-
-@mixin body-font() {
-    font-size: 14px;
-    line-height: 24px;
-}
-
-.header-block {
-    margin-left: 423px;
-    margin-top: 132px;
+.header-blocks {
+    margin: 145px 0px 0px 423px;
     color: rgba(31, 32, 65, 0.25);
-    &_h1 {
-        @include h1-font();
-        width: 29px;
-        height: 30px;
-        margin-bottom: 80px;
+    &__item {
+        display: flex;
     }
-    &_h2 {
-        @include h2-font();
-        width: 27px;
-        height: 24px;
-        margin-bottom: 74px;
-        margin-left: 4px;
+    &__block-h1 {
+        font-size: 24px;
+        line-height: 29px;
+        &_bold {
+            font-weight: bold;
+            width: 370px;
+            margin: 0px 0px 53px 30px;
+            color:#1F2041;
+        }
     }
-    &_h3 {
-        @include h3-font();
-        width: 17px;
-        height: 15px;
-        margin-bottom: 46px;
-        margin-left: 14px;
+    &__block-h2 {
+        font-size: 19px;
+        line-height: 23px;
+        margin:0px 0px 75px 2px;
+        &_bold {
+            font-weight: bold;
+            width: 312px;
+            margin: 0px 0px 51px 30px;
+            color:#1F2041;
+        }
     }
-    &_body {
-        @include body-font();
-        width: 37px;
-        height: 24px;
+    &__block-h3 {
+        font-size: 12px;
+        line-height: 15px;
+        margin: 0px 0px 45px 13px;
+        &_uppercase-bold{
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0px 0px 47px 30px;
+            color:#1F2041;
+        }
     }
-}
-
-.title-block {
-    font-weight: bold;
-    margin-left: 24px;
-    margin-top: 132px;
-}
-
-.h1-block {
-    @include h1-font();
-    width: 369px;
-    margin-bottom: 51px;
-}
-
-.h2-block {
-    @include h2-font();
-    width: 312px;
-    margin-bottom: 51px;
-}
-
-.h3-block {
-    @include h3-font();
-    text-transform: uppercase;
-    margin-bottom: 48px;
-}
-
-.body-block {
-    @include body-font();
-    width: 301px;
-    opacity: 0.75;
-    font-weight: normal;
+    &__block-body {
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: -7px;
+        &_transparent {
+            margin: 0px 0px 0px 30px;
+            width: 301px;
+            color:#1F2041;
+            opacity: 0.75;
+        }
+    }
 }
