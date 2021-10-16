@@ -7,43 +7,40 @@ html(lang="ru")
   body
     .circle
       img(src="../colorsandtype/images/logo_1.svg")
-    .wrap
-      .header
-        .logo
-          img(src="images/logo.svg")        
-        .nav
-          .nav__item.nav_bold О нас
-          .nav__item.nav_thin Услуги
-          .nav__link
-            img(src='images/expand_more.svg')
-          .nav__item.nav_thin Вакансии
-          .nav__item.nav_thin Новости
-          .nav__item.nav_thin Соглашения
-          .nav__link
-            img(src='images/expand_more.svg')
-        .wrap
-          button.login-btn
-            p.btn-text войти
-          button.register-btn
-            p.btn-text зарегистрироваться
-//    .wrap2
-      .header
-        .logo
-          img(src="images/logo.svg")
-        .wrap2 
-          ul.nav
-            li.nav__item.nav_bold О нас
-            li.nav__item.nav_thin Услуги
-            li.nav__link
-              img(src='images/expand_more.svg')
-            li.nav__item.nav_thin Вакансии
-            li.nav__item.nav_thin Новости
-            li.nav__item.nav_thin Соглашения
-            li.nav__link
-              img(src='images/expand_more.svg')
-        .border
-        p.cesar Юлий Цезарь
-    .wrap
+    .header.header-logged-out
+      .logo
+        img(src="images/logo.svg")        
+      .nav
+        .nav__item.nav__item_bold О нас
+        .nav__item Услуги
+        .nav__link
+          img(src='images/expand_more.svg')
+        .nav__item Вакансии
+        .nav__item Новости
+        .nav__item Соглашения
+        .nav__link
+          img(src='images/expand_more.svg')
+      .buttons
+        button.button.button_login
+          .button__text войти
+        button.button.button_register
+          .button__text зарегистрироваться
+    .header.header-logged-in
+      .logo
+        img(src="images/logo.svg")
+      .nav.nav-logged-in
+        .nav__item.nav__item_bold О нас
+        .nav__item Услуги
+        .nav__link
+          img(src='images/expand_more.svg')
+        .nav__item Вакансии
+        .nav__item Новости
+        .nav__item Соглашения
+        .nav__link
+          img(src='images/expand_more.svg')
+      .header__vertical-border
+      .header__username Юлий Цезарь
+//   .wrap
       .footer
         .container
           .logo-foot

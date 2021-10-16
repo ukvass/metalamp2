@@ -30,107 +30,90 @@ body {
     max-width: 1440px;
     height: 70px;
     display: flex;
-    justify-content: space-around;
     align-items:center;
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    &__vertical-border {
+        width: 1px;
+        height: 30px;
+        background: rgba(31, 32, 65, 0.1);
+        margin: 0px 0px 0px 20px;
+    }
+    &__username {
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(31, 32, 65, 0.5);
+        margin: 0px 0px 0px 20px;
+    }
 }
 
-.wrap .header {
-    margin-top: 52px;
-}
-
-.wrap2 .header {
+.header-logged-out {
     margin-top: 40px;
 }
 
-.wrap3 .header {
-    margin-top: 1px;
-}
-
 .logo {
-    margin-left: 106px;
+    margin:4px 0px 0px 142px;
 }
 
 .nav {
     display: flex;
     font-size: 14px;
     line-height: 17px;
+    margin: 0px 0px 0px 265px;
     &__item {
         margin-left: 20px;
+        color: rgba(31, 32, 65, 0.5);
+        cursor: pointer;
+        &_bold {
+            font-weight: bold;
+            color: rgba(31, 32, 65, 0.75);
+        }
     }
     &__link {
-        margin-left: 5px;
-        margin-right: 7px;
-    }
-    &_thin {
-        color: rgba(31, 32, 65, 0.5);
-    }
-    &_bold {
-        font-weight: bold;
-        color: rgba(31, 32, 65, 0.75);
+        margin: 0px 8px 0px 6px;
+        cursor: pointer;
     }
 }
 
-.wrap2 .nav {
-    margin-left: 406px;
-}
-
-.login-btn {
-    cursor: pointer;
-    width: 87px;
-    height: 34px;
-    background: transparent;
-    color:#BC9CFF;
-    border: 2px solid;
-    border-color: #BC9CFF;
-    border-radius: 22px;
-    margin-left: 20px;
-}
-
-.register-btn {
-    cursor: pointer;
-    width: 196px;
-    height: 34px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    color: white;
-    border: 2px solid;
-    border-color: #BC9CFF;
-    border-radius: 22px;
-    margin-left: 18px;
-}
-
-.btn-text {
-    font-family: Montserrat, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    margin-top: 7px;
-}
-
-.wrap .login-btn .register-btn {
+.buttons {
     display: flex;
+    justify-content: space-between;
+    width: 303px;
+    margin: 0px 0px 0px 17px;
 }
 
-.border {
-    width: 1px;
-    height: 30px;
-    background: rgba(31, 32, 65, 0.1);
-    margin-top: 20px;
-    margin-left: 20px;
+.button {
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 22px;
+    border-color: #BC9CFF;
+    height: 34px;
+    &__text {
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+    &_login {
+        width: 87px;
+        background: transparent;
+        color:#BC9CFF;
+    }
+    &_register {
+        width: 196px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        color: white;
+    }
 }
 
-.cesar {
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    line-height: 17px;
-    font-style: normal;
-    font-weight: normal;
-    color: rgba(31, 32, 65, 0.5);
-    margin-left: 20px;
-    margin-top: 26px;
+.header-logged-in {
+    margin: 40px 0px 0px 0px;
+}
+
+.nav-logged-in {
+    margin-left: 406px;
 }
 
 .footer {
