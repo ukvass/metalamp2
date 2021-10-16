@@ -138,43 +138,38 @@ body {
 }
 
 .nav-logged-in {
-  margin-left: 406px;
+  margin: 0px 0px 0px 406px;
+}
+
+.footer-indent {
+  margin-top: 40px;
 }
 
 .footer {
-  width: 1440px;
+  max-width: 1440px;
   height: 372px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
           box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
-.wrap .footer {
-  margin-top: 40px;
-}
-
-.logo-foot {
-  margin-top: 100px;
-  margin-left: 140px;
+.footer__logo {
+  margin: 0px 0px 13px 140px;
 }
 
 .text {
   width: 260px;
   height: 72px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   margin-left: 140px;
-}
-
-.container .logo-foot .text {
-  display: flexbox;
 }
 
 .footer-list {
@@ -188,7 +183,7 @@ body {
 }
 
 .footer-list__item {
-  margin-bottom: 21px;
+  margin: 0px 0px 21px 0px;
 }
 
 .footer-list_head {
@@ -208,25 +203,6 @@ body {
   margin-top: -2px;
 }
 
-.container .footer-list {
-  margin-top: 104px;
-}
-
-.container2 {
-  margin-top: 90px;
-  margin-left: 17px;
-}
-
-.container3 {
-  margin-top: 90px;
-  margin-left: 54px;
-}
-
-.container4 {
-  margin-top: 90px;
-  margin-left: 11px;
-}
-
 .input {
   width: 260px;
   height: 44px;
@@ -235,9 +211,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.25);
@@ -248,8 +222,7 @@ body {
   background: transparent;
   border: none;
   position: absolute;
-  margin-top: -32px;
-  margin-left: 222px;
+  margin: -32px 0px 0px 222px;
 }
 
 .copyright-text {
@@ -348,48 +321,43 @@ body {
       <div class="header__vertical-border"></div>
       <div class="header__username">Юлий Цезарь</div>
     </div>
+    <div class="footer footer-indent">
+      <div class="column">
+        <div class="footer__logo"><img src="images/logo.svg"></div>
+        <div class="text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
+      </div>
+      <div class="footer-list">
+        <div class="footer-list__item footer-list_head">Навигация</div>
+        <div class="footer-list__item">О нас</div>
+        <div class="footer-list__item">Новости</div>
+        <div class="footer-list__item">Служба поддержки</div>
+        <div class="footer-list__item">Услуги</div>
+      </div>
+      <div class="footer-list">
+        <div class="footer-list__item footer-list_head">О нас</div>
+        <div class="footer-list__item">О сервисе</div>
+        <div class="footer-list__item">Наша команда</div>
+        <div class="footer-list__item">Вакансии</div>
+        <div class="footer-list__item">Инвесторы</div>
+      </div>
+      <div class="footer-list">
+        <div class="footer-list__item footer-list_head">Служба поддержки</div>
+        <div class="footer-list__item">Соглашения</div>
+        <div class="footer-list__item">Сообщества</div>
+        <div class="footer-list__item">Связь с нами </div>
+      </div>
+      <div class="footer-list footer-list__subscribe">
+        <div class="footer-list__item footer-list_head">Подписка</div>
+        <div class="footer-list__item footer-list_news">Получайте специальные предложения и новости сервиса</div>
+        <div class="input">
+          <input class="input" type="text" name="" value="   Email" button="">
+          <button class="arrow"><img src="images/arrow_forward.svg"></button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
-<!--   .wrap
-  .footer
-    .container
-      .logo-foot
-        img(src="images/logo.svg")
-      p.text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-    .container
-      ul.footer-list
-        li.footer-list__item.footer-list_head Навигация
-        li.footer-list__item О нас
-        li.footer-list__item Новости
-        li.footer-list__item Служба поддержки
-        li.footer-list__item Услуги
-    .container2
-      ul.footer-list
-        li.footer-list__item.footer-list_head О нас
-        li.footer-list__item О сервисе
-        li.footer-list__item Наша команда
-        li.footer-list__item Вакансии
-        li.footer-list__item Инвесторы
-    .container3
-      ul.footer-list
-        li.footer-list__item.footer-list_head Служба поддержки
-        li.footer-list__item Соглашения
-        li.footer-list__item Сообщества
-        li.footer-list__item Связь с нами
-    .container4
-      ul.footer-list.footer-list__subscribe
-        li.footer-list__item.footer-list_head Подписка
-        li.footer-list__item.footer-list_news Получайте специальные предложения и новости сервиса
-        .input
-          input.input(
-          type='text'
-          name=''
-          value='   Email'
-          button=''       
-        )
-          button.arrow
-            img(src='images/arrow_forward.svg')
-.wrap3 
+<!--    .wrap3 
   .header        
     .wrap  
       p.copyright-text Copyright © 2018 Toxin отель. Все права защищены.
