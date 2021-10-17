@@ -20,6 +20,8 @@ body {
   margin: 0px auto;
   max-width: 1440px;
   font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .circle {
@@ -138,7 +140,7 @@ body {
 }
 
 .footer-indent {
-  margin-top: 40px;
+  margin: 40px 0px 1px 0px;
 }
 
 .footer {
@@ -147,34 +149,38 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
           box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .footer__logo {
-  margin: 0px 0px 13px 140px;
+  margin: 0px 0px 13px 0px;
 }
 
 .text {
   width: 260px;
   height: 72px;
-  font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
-  margin-left: 140px;
+}
+
+.container-footer {
+  width: 1160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 100px auto;
 }
 
 .footer-list {
-  list-style: none;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+  margin: 4px 0px 0px 0px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -182,24 +188,46 @@ body {
   margin: 0px 0px 21px 0px;
 }
 
-.footer-list_head {
+.footer-list__item_head {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   color: #1F2041;
+  margin: 0px 0px 22px 0px;
+}
+
+.footer-list__item_head-subscribe {
+  margin: 0px 0px 20px 0px;
+}
+
+.footer-list__item_news {
+  line-height: 24px;
+  margin: -2px 0px 23px 0px;
 }
 
 .footer-list__subscribe {
   max-width: 260px;
 }
 
-.footer-list_news {
-  line-height: 24px;
-  margin-top: -2px;
+.indent-logofooter {
+  margin: 0px 40px 0px 0px;
+}
+
+.indent-navigation {
+  margin: 4px 58px 0px 0px;
+}
+
+.indent-about {
+  margin: 4px 92px 0px 0px;
+}
+
+.indent-support {
+  margin: 4px 52px 0px 0px;
 }
 
 .input {
+  font-family: Montserrat, sans-serif;
   width: 260px;
   height: 44px;
   background: transparent;
@@ -207,9 +235,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  font-family: Montserrat, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
   color: rgba(31, 32, 65, 0.25);
 }
 
@@ -218,21 +243,12 @@ body {
   background: transparent;
   border: none;
   position: absolute;
-  margin: -32px 0px 0px 222px;
+  margin: 12px 0px 0px -35px;
 }
 
 .copyright-text {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+  margin: 0px 0px 0px 140px;
   color: rgba(31, 32, 65, 0.75);
-}
-
-.wrap .copyright-text {
-  margin-left: 140px;
-  margin-top: 27px;
 }
 
 .wrap2 .copyright-text {
@@ -247,11 +263,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 112px;
-}
-
-.wrap .social {
-  margin-top: 24px;
-  margin-left: 676px;
+  margin: 0px 0px 0px 676px;
 }
 
 .wrap2 .social {

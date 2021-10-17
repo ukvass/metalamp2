@@ -24,6 +24,8 @@ body {
   margin: 0px auto;
   max-width: 1440px;
   font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .circle {
@@ -142,7 +144,7 @@ body {
 }
 
 .footer-indent {
-  margin-top: 40px;
+  margin: 40px 0px 1px 0px;
 }
 
 .footer {
@@ -151,34 +153,38 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
           box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .footer__logo {
-  margin: 0px 0px 13px 140px;
+  margin: 0px 0px 13px 0px;
 }
 
 .text {
   width: 260px;
   height: 72px;
-  font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
-  margin-left: 140px;
+}
+
+.container-footer {
+  width: 1160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 100px auto;
 }
 
 .footer-list {
-  list-style: none;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+  margin: 4px 0px 0px 0px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -186,24 +192,46 @@ body {
   margin: 0px 0px 21px 0px;
 }
 
-.footer-list_head {
+.footer-list__item_head {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   color: #1F2041;
+  margin: 0px 0px 22px 0px;
+}
+
+.footer-list__item_head-subscribe {
+  margin: 0px 0px 20px 0px;
+}
+
+.footer-list__item_news {
+  line-height: 24px;
+  margin: -2px 0px 23px 0px;
 }
 
 .footer-list__subscribe {
   max-width: 260px;
 }
 
-.footer-list_news {
-  line-height: 24px;
-  margin-top: -2px;
+.indent-logofooter {
+  margin: 0px 40px 0px 0px;
+}
+
+.indent-navigation {
+  margin: 4px 58px 0px 0px;
+}
+
+.indent-about {
+  margin: 4px 92px 0px 0px;
+}
+
+.indent-support {
+  margin: 4px 52px 0px 0px;
 }
 
 .input {
+  font-family: Montserrat, sans-serif;
   width: 260px;
   height: 44px;
   background: transparent;
@@ -211,9 +239,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  font-family: Montserrat, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
   color: rgba(31, 32, 65, 0.25);
 }
 
@@ -222,21 +247,12 @@ body {
   background: transparent;
   border: none;
   position: absolute;
-  margin: -32px 0px 0px 222px;
+  margin: 12px 0px 0px -35px;
 }
 
 .copyright-text {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+  margin: 0px 0px 0px 140px;
   color: rgba(31, 32, 65, 0.75);
-}
-
-.wrap .copyright-text {
-  margin-left: 140px;
-  margin-top: 27px;
 }
 
 .wrap2 .copyright-text {
@@ -251,11 +267,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 112px;
-}
-
-.wrap .social {
-  margin-top: 24px;
-  margin-left: 676px;
+  margin: 0px 0px 0px 676px;
 }
 
 .wrap2 .social {
@@ -322,65 +334,61 @@ body {
       <div class="header__username">Юлий Цезарь</div>
     </div>
     <div class="footer footer-indent">
-      <div class="column">
-        <div class="footer__logo"><img src="images/logo.svg"></div>
-        <div class="text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
-      </div>
-      <div class="footer-list">
-        <div class="footer-list__item footer-list_head">Навигация</div>
-        <div class="footer-list__item">О нас</div>
-        <div class="footer-list__item">Новости</div>
-        <div class="footer-list__item">Служба поддержки</div>
-        <div class="footer-list__item">Услуги</div>
-      </div>
-      <div class="footer-list">
-        <div class="footer-list__item footer-list_head">О нас</div>
-        <div class="footer-list__item">О сервисе</div>
-        <div class="footer-list__item">Наша команда</div>
-        <div class="footer-list__item">Вакансии</div>
-        <div class="footer-list__item">Инвесторы</div>
-      </div>
-      <div class="footer-list">
-        <div class="footer-list__item footer-list_head">Служба поддержки</div>
-        <div class="footer-list__item">Соглашения</div>
-        <div class="footer-list__item">Сообщества</div>
-        <div class="footer-list__item">Связь с нами </div>
-      </div>
-      <div class="footer-list footer-list__subscribe">
-        <div class="footer-list__item footer-list_head">Подписка</div>
-        <div class="footer-list__item footer-list_news">Получайте специальные предложения и новости сервиса</div>
-        <div class="input">
+      <div class="container-footer"> 
+        <div class="column indent-logofooter">
+          <div class="footer__logo"><img src="images/logo.svg"></div>
+          <div class="text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
+        </div>
+        <div class="footer-list indent-navigation">
+          <div class="footer-list__item footer-list__item_head">Навигация</div>
+          <div class="footer-list__item">О нас</div>
+          <div class="footer-list__item">Новости</div>
+          <div class="footer-list__item">Служба поддержки</div>
+          <div class="footer-list__item">Услуги</div>
+        </div>
+        <div class="footer-list indent-about">
+          <div class="footer-list__item footer-list__item_head">О нас</div>
+          <div class="footer-list__item">О сервисе</div>
+          <div class="footer-list__item">Наша команда</div>
+          <div class="footer-list__item">Вакансии</div>
+          <div class="footer-list__item">Инвесторы</div>
+        </div>
+        <div class="footer-list indent-support">
+          <div class="footer-list__item footer-list__item_head">Служба поддержки</div>
+          <div class="footer-list__item">Соглашения</div>
+          <div class="footer-list__item">Сообщества</div>
+          <div class="footer-list__item">Связь с нами </div>
+        </div>
+        <div class="footer-list footer-list__subscribe">
+          <div class="footer-list__item footer-list__item_head footer-list__item_head-subscribe">Подписка</div>
+          <div class="footer-list__item footer-list__item_news">Получайте специальные предложения и новости сервиса</div>
           <input class="input" type="text" name="" value="   Email" button="">
           <button class="arrow"><img src="images/arrow_forward.svg"></button>
         </div>
       </div>
     </div>
+    <div class="wrap3"> 
+      <div class="header">       
+        <div class="copyright-text">Copyright © 2018 Toxin отель. Все права защищены.</div>
+        <div class="wrap"> 
+          <div class="social"><a href="#"> <img src="images/twitter.svg" alt=""></a><a href="#"> <img src="images/facebook.svg" alt=""></a><a href="#"> <img src="images/instagram.svg" alt=""></a></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
-<!--    .wrap3 
-  .header        
-    .wrap  
-      p.copyright-text Copyright © 2018 Toxin отель. Все права защищены.
-    .wrap 
-      .social
-        a(href="#") 
-          img(src="images/twitter.svg", alt="")
-        a(href="#") 
-          img(src="images/facebook.svg", alt="")
-        a(href="#") 
-          img(src="images/instagram.svg", alt="")
-.wrap 
-  .footer-mobile
-    .logo-mobfoot
-      img(src="images/logo.svg")
-    .wrap2  
-      p.copyright-text Copyright © 2018 Toxin отель. Все права защищены.
-    .wrap2  
-      .social
-        a(href="#") 
-          img(src="images/twitter.svg", alt="")
-        a(href="#") 
-          img(src="images/facebook.svg", alt="")
-        a(href="#") 
-          img(src="images/instagram.svg", alt="")
+<!--    .wrap 
+.footer-mobile
+  .logo-mobfoot
+    img(src="images/logo.svg")
+  .wrap2  
+    p.copyright-text Copyright © 2018 Toxin отель. Все права защищены.
+  .wrap2  
+    .social
+      a(href="#") 
+        img(src="images/twitter.svg", alt="")
+      a(href="#") 
+        img(src="images/facebook.svg", alt="")
+      a(href="#") 
+        img(src="images/instagram.svg", alt="")
 -->
