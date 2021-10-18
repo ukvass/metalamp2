@@ -118,11 +118,6 @@ body {
     margin:0px 0px 0px 406px;
 }
 
-
-.footer-indent{
-    margin: 40px 0px 1px 0px;
-}
-
 .footer {
     max-width: 1440px;
     height: 372px;
@@ -130,16 +125,22 @@ body {
     align-items:flex-start;
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    &__logotext {
+        margin: 0px 40px 0px 0px;
+    }
     &__logo {
         margin: 0px 0px 13px 0px;
     }
+    &__text {
+        width: 260px;
+        height: 72px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+    }
 }
 
-.text {
-    width: 260px;
-    height: 72px;
-    line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+.footer-indent{
+    margin: 40px 0px 1px 0px;
 }
 
 .container-footer {
@@ -152,6 +153,15 @@ body {
 .footer-list {
     margin: 4px 0px 0px 0px;
     color: rgba(31, 32, 65, 0.5);
+    &_navigation {
+        margin: 4px 58px 0px 0px;
+    }
+    &_about {
+        margin: 4px 92px 0px 0px;
+    }
+    &_support {
+         margin: 4px 52px 0px 0px;
+    }
     &__item {
         margin: 0px 0px 21px 0px;
         &_head {
@@ -175,22 +185,6 @@ body {
     }
 }
 
-.indent-logofooter {
-    margin: 0px 40px 0px 0px;
-}
-
-.indent-navigation {
-    margin: 4px 58px 0px 0px;
-}
-
-.indent-about {
-    margin: 4px 92px 0px 0px;
-}
-
-.indent-support {
-    margin: 4px 52px 0px 0px;
-}
-
 .input {
     font-family: Montserrat, sans-serif;
     width: 260px;
@@ -207,28 +201,26 @@ body {
     background: transparent;
     border: none;
     position: absolute;
-    margin: 12px 0px 0px -35px;
+    &_input{
+        margin: 12px 0px 0px -36px;
+    }
 }
 
 .copyright-text {
-    margin: 0px 0px 0px 140px;
     color: rgba(31, 32, 65, 0.75);
 }
 
-.wrap2 .copyright-text {
-    margin-left: 198px;
+.copyright-text-footer {
+    margin: 0px 0px 0px 140px;
 }
 
 .social {
     display: flex;
     justify-content: space-between;
     width: 112px;
-    margin: 0px 0px 0px 676px; 
-}
-
-.wrap2 .social {
-    margin-left: 328px;
-    padding-bottom: -4px;
+    &_footer {
+        margin: 3px 0px 0px 676px;
+    }
 }
 
 .footer-mobile {
@@ -236,16 +228,17 @@ body {
     height: 367px;
     background: white;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__logo {
+        margin: 120px 0px 17px 0px;
+    }
+    &__copyright-text {
+        margin: 0px 0px 26px 0px;
+    }
 }
 
-.wrap .footer-mobile {
-    margin-left: 336px;
-    margin-top: 40px;
-    margin-bottom: 140px;
-}
-
-.logo-mobfoot {
-    padding-top: 120px;
-    margin-left: 331px;
-    margin-bottom: -10px;
+.footer-mobile-uikit {
+    margin: 40px 0px 140px 336px;
 }

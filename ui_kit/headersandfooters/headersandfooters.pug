@@ -44,24 +44,24 @@ html(lang="ru")
       .header__username Юлий Цезарь
     
     .footer.footer-indent
-      .container-footer  
-        .column.indent-logofooter
+      .container-footer
+        .footer__logotext
           .footer__logo
             img(src="images/logo.svg")
-          .text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-        .footer-list.indent-navigation
+          .footer__text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+        .footer-list.footer-list_navigation
           .footer-list__item.footer-list__item_head Навигация
           .footer-list__item О нас
           .footer-list__item Новости
           .footer-list__item Служба поддержки
           .footer-list__item Услуги
-        .footer-list.indent-about
+        .footer-list.footer-list_about
           .footer-list__item.footer-list__item_head О нас
           .footer-list__item О сервисе
           .footer-list__item Наша команда
           .footer-list__item Вакансии
           .footer-list__item Инвесторы
-        .footer-list.indent-support
+        .footer-list.footer-list_support
           .footer-list__item.footer-list__item_head Служба поддержки
           .footer-list__item Соглашения
           .footer-list__item Сообщества
@@ -75,30 +75,27 @@ html(lang="ru")
           value='   Email'
           button=''                   
           )
-          button.arrow
+          button.arrow.arrow_input
             img(src='images/arrow_forward.svg')  
-    .wrap3 
-      .header        
-        .copyright-text Copyright © 2018 Toxin отель. Все права защищены.
-        .wrap 
-          .social
-            a(href="#") 
-              img(src="images/twitter.svg", alt="")
-            a(href="#") 
-              img(src="images/facebook.svg", alt="")
-            a(href="#") 
-              img(src="images/instagram.svg", alt="")
-//    .wrap 
-      .footer-mobile
-        .logo-mobfoot
-          img(src="images/logo.svg")
-        .wrap2  
-          p.copyright-text Copyright © 2018 Toxin отель. Все права защищены.
-        .wrap2  
-          .social
-            a(href="#") 
-              img(src="images/twitter.svg", alt="")
-            a(href="#") 
-              img(src="images/facebook.svg", alt="")
-            a(href="#") 
-              img(src="images/instagram.svg", alt="")
+    
+    .header
+      .copyright-text.copyright-text-footer Copyright © 2018 Toxin отель. Все права защищены.
+      .social.social_footer
+        a(href="#") 
+          img(src="images/twitter.svg", alt="")
+        a(href="#") 
+          img(src="images/facebook.svg", alt="")
+        a(href="#") 
+          img(src="images/instagram.svg", alt="")
+
+    .footer-mobile.footer-mobile-uikit
+      .footer-mobile__logo
+        img(src="images/logo.svg")
+      .copyright-text.footer-mobile__copyright-text Copyright © 2018 Toxin отель. Все права защищены.
+      .social
+        a(href="#") 
+          img(src="images/twitter.svg", alt="")
+        a(href="#") 
+          img(src="images/facebook.svg", alt="")
+        a(href="#") 
+          img(src="images/instagram.svg", alt="")

@@ -143,10 +143,6 @@ body {
   margin: 0px 0px 0px 406px;
 }
 
-.footer-indent {
-  margin: 40px 0px 1px 0px;
-}
-
 .footer {
   max-width: 1440px;
   height: 372px;
@@ -161,15 +157,23 @@ body {
           box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
+.footer__logotext {
+  margin: 0px 40px 0px 0px;
+}
+
 .footer__logo {
   margin: 0px 0px 13px 0px;
 }
 
-.text {
+.footer__text {
   width: 260px;
   height: 72px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.footer-indent {
+  margin: 40px 0px 1px 0px;
 }
 
 .container-footer {
@@ -186,6 +190,18 @@ body {
 .footer-list {
   margin: 4px 0px 0px 0px;
   color: rgba(31, 32, 65, 0.5);
+}
+
+.footer-list_navigation {
+  margin: 4px 58px 0px 0px;
+}
+
+.footer-list_about {
+  margin: 4px 92px 0px 0px;
+}
+
+.footer-list_support {
+  margin: 4px 52px 0px 0px;
 }
 
 .footer-list__item {
@@ -214,22 +230,6 @@ body {
   max-width: 260px;
 }
 
-.indent-logofooter {
-  margin: 0px 40px 0px 0px;
-}
-
-.indent-navigation {
-  margin: 4px 58px 0px 0px;
-}
-
-.indent-about {
-  margin: 4px 92px 0px 0px;
-}
-
-.indent-support {
-  margin: 4px 52px 0px 0px;
-}
-
 .input {
   font-family: Montserrat, sans-serif;
   width: 260px;
@@ -247,16 +247,18 @@ body {
   background: transparent;
   border: none;
   position: absolute;
-  margin: 12px 0px 0px -35px;
+}
+
+.arrow_input {
+  margin: 12px 0px 0px -36px;
 }
 
 .copyright-text {
-  margin: 0px 0px 0px 140px;
   color: rgba(31, 32, 65, 0.75);
 }
 
-.wrap2 .copyright-text {
-  margin-left: 198px;
+.copyright-text-footer {
+  margin: 0px 0px 0px 140px;
 }
 
 .social {
@@ -267,12 +269,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 112px;
-  margin: 0px 0px 0px 676px;
 }
 
-.wrap2 .social {
-  margin-left: 328px;
-  padding-bottom: -4px;
+.social_footer {
+  margin: 3px 0px 0px 676px;
 }
 
 .footer-mobile {
@@ -281,18 +281,28 @@ body {
   background: white;
   -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
           box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.wrap .footer-mobile {
-  margin-left: 336px;
-  margin-top: 40px;
-  margin-bottom: 140px;
+.footer-mobile__logo {
+  margin: 120px 0px 17px 0px;
 }
 
-.logo-mobfoot {
-  padding-top: 120px;
-  margin-left: 331px;
-  margin-bottom: -10px;
+.footer-mobile__copyright-text {
+  margin: 0px 0px 26px 0px;
+}
+
+.footer-mobile-uikit {
+  margin: 40px 0px 140px 336px;
 }
 /*# sourceMappingURL=headersandfooters.css.map */
     </style>
@@ -334,26 +344,26 @@ body {
       <div class="header__username">Юлий Цезарь</div>
     </div>
     <div class="footer footer-indent">
-      <div class="container-footer"> 
-        <div class="column indent-logofooter">
+      <div class="container-footer">
+        <div class="footer__logotext">
           <div class="footer__logo"><img src="images/logo.svg"></div>
-          <div class="text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
+          <div class="footer__text">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
         </div>
-        <div class="footer-list indent-navigation">
+        <div class="footer-list footer-list_navigation">
           <div class="footer-list__item footer-list__item_head">Навигация</div>
           <div class="footer-list__item">О нас</div>
           <div class="footer-list__item">Новости</div>
           <div class="footer-list__item">Служба поддержки</div>
           <div class="footer-list__item">Услуги</div>
         </div>
-        <div class="footer-list indent-about">
+        <div class="footer-list footer-list_about">
           <div class="footer-list__item footer-list__item_head">О нас</div>
           <div class="footer-list__item">О сервисе</div>
           <div class="footer-list__item">Наша команда</div>
           <div class="footer-list__item">Вакансии</div>
           <div class="footer-list__item">Инвесторы</div>
         </div>
-        <div class="footer-list indent-support">
+        <div class="footer-list footer-list_support">
           <div class="footer-list__item footer-list__item_head">Служба поддержки</div>
           <div class="footer-list__item">Соглашения</div>
           <div class="footer-list__item">Сообщества</div>
@@ -363,32 +373,18 @@ body {
           <div class="footer-list__item footer-list__item_head footer-list__item_head-subscribe">Подписка</div>
           <div class="footer-list__item footer-list__item_news">Получайте специальные предложения и новости сервиса</div>
           <input class="input" type="text" name="" value="   Email" button="">
-          <button class="arrow"><img src="images/arrow_forward.svg"></button>
+          <button class="arrow arrow_input"><img src="images/arrow_forward.svg"></button>
         </div>
       </div>
     </div>
-    <div class="wrap3"> 
-      <div class="header">       
-        <div class="copyright-text">Copyright © 2018 Toxin отель. Все права защищены.</div>
-        <div class="wrap"> 
-          <div class="social"><a href="#"> <img src="images/twitter.svg" alt=""></a><a href="#"> <img src="images/facebook.svg" alt=""></a><a href="#"> <img src="images/instagram.svg" alt=""></a></div>
-        </div>
-      </div>
+    <div class="header">
+      <div class="copyright-text copyright-text-footer">Copyright © 2018 Toxin отель. Все права защищены.</div>
+      <div class="social social_footer"><a href="#"> <img src="images/twitter.svg" alt=""></a><a href="#"> <img src="images/facebook.svg" alt=""></a><a href="#"> <img src="images/instagram.svg" alt=""></a></div>
+    </div>
+    <div class="footer-mobile footer-mobile-uikit">
+      <div class="footer-mobile__logo"><img src="images/logo.svg"></div>
+      <div class="copyright-text footer-mobile__copyright-text">Copyright © 2018 Toxin отель. Все права защищены.</div>
+      <div class="social"><a href="#"> <img src="images/twitter.svg" alt=""></a><a href="#"> <img src="images/facebook.svg" alt=""></a><a href="#"> <img src="images/instagram.svg" alt=""></a></div>
     </div>
   </body>
 </html>
-<!--    .wrap 
-.footer-mobile
-  .logo-mobfoot
-    img(src="images/logo.svg")
-  .wrap2  
-    p.copyright-text Copyright © 2018 Toxin отель. Все права защищены.
-  .wrap2  
-    .social
-      a(href="#") 
-        img(src="images/twitter.svg", alt="")
-      a(href="#") 
-        img(src="images/facebook.svg", alt="")
-      a(href="#") 
-        img(src="images/instagram.svg", alt="")
--->

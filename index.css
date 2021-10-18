@@ -1,5 +1,5 @@
 body {
-  margin: 0px auto;
+  margin: auto auto;
   max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,25 +11,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #53CCCC;
+  background-color: #911E42;
+  font-family: Montserrat, sans-serif;
+  font-size: x-large;
 }
 
 ul {
-  list-style: none;
+  list-style: armenian;
+  margin: 25% 0px 0px 0px;
 }
 
 li {
   margin-bottom: 20px;
 }
 
-ul:first-child {
-  margin-top: 10%;
-}
-
 .link {
   text-decoration: none;
-  font-family: Montserrat, sans-serif;
-  font-size: larger;
-  color: #006363;
+  color: #F5F5DC;
 }
 /*# sourceMappingURL=index.css.map */
