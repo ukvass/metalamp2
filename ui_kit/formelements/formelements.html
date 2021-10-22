@@ -30,6 +30,17 @@ body {
   margin: 30px 0px 0px 30px;
 }
 
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 140px;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,7 +50,7 @@ body {
 }
 
 .input-block {
-  margin: 140px 0px 20px 63px;
+  margin: 0px 0px 20px 63px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,13 +94,13 @@ input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  color: rgba(31, 32, 65, 0.5);
+  opacity: 0.5;
   padding-inline: 15px;
 }
 
 input:hover {
   border: 1px solid rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.75);
+  opacity: 0.75;
 }
 /*# sourceMappingURL=formelements.css.map */
     </style>
@@ -97,12 +108,21 @@ input:hover {
   <body>
     <div class="wrapper">
       <div class="logo"> <img src="../colorsandtype/images/logo_1.svg"></div>
-      <div class="input-block">
-        <div class="text-wrap">
-          <div class="item-name">text field</div>
-          <div class="item-state">default</div>
+      <div class="column">
+        <div class="input-block">
+          <div class="text-wrap">
+            <div class="item-name">text field</div>
+            <div class="item-state">default</div>
+          </div>
+          <input placeholder="Email">
         </div>
-        <input placeholder="Email">
+        <div class="input-block">
+          <div class="text-wrap">
+            <div class="item-name">text field</div>
+            <div class="item-state">hover/focus</div>
+          </div>
+          <input placeholder="This is pretty awesome">
+        </div>
       </div>
     </div>
   </body>
