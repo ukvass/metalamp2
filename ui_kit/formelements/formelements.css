@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Form elements</title>
-    <style>@charset "UTF-8";
+@charset "UTF-8";
 @import url(/Users/helge/Documents/GitHub/metalamp2/ui_kit/formelements/components/input/input.css);
 @font-face {
   font-family: 'Montserrat';
@@ -92,18 +88,3 @@ input:hover {
   color: rgba(31, 32, 65, 0.75);
 }
 /*# sourceMappingURL=formelements.css.map */
-    </style>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="logo"> <img src="../colorsandtype/images/logo_1.svg"></div>
-      <div class="input-block">
-        <div class="text-wrap">
-          <div class="item-name">text field</div>
-          <div class="item-state">default</div>
-        </div>
-        <input placeholder="Email">
-      </div>
-    </div>
-  </body>
-</html>
