@@ -8,15 +8,76 @@ html(lang="en")
     .wrapper
       .logo  
         img(src='../colorsandtype/images/logo_1.svg')
-      .column
-        .input-block
-          .text-wrap
-            .item-name text field
-            .item-state default
-          input(placeholder='Email')
-        .input-block
-          .text-wrap
-            .item-name text field
-            .item-state hover/focus
-          input(placeholder='This is pretty awesome')
-      
+      .row  
+        .column
+          .input-block
+            .text-wrap
+              h3 text field
+              h3.item-state default
+            input(placeholder='Email').input
+          .input-block
+            .text-wrap
+              h3 text field
+              h3.item-state hover/focus
+            input(value='This is pretty awesome').input.input_hover
+          .input-block
+            .text-wrap
+              h3 dropdown
+            input(placeholder='Сколько гостей').input.input_dd
+          .input-block
+            .text-wrap
+              h3 masked text field
+            input(placeholder='ДД.ММ.ГГГГ').input
+          .dropdowns-row
+            .small-dropdown-block
+              .text-wrap
+                h3 date dropdown
+              input(placeholder='ДД.ММ.ГГГГ').input.input_small.input_dd
+            .small-dropdown-block
+              .text-wrap
+                h3 date dropdown
+              input(placeholder='19.08.2019').input.input_small.input_dd
+          .medium-dropdown-block
+            .text-wrap
+              h3 filter date dropdown
+            input(placeholder='19 авг - 23 авг').input.input_medium.input_dd
+          .medium-dropdown-block
+            .text-wrap
+              h3 subscription text field
+            input(placeholder='Email').input.input_medium
+      .column-2
+        .checkbox-buttons
+          h3 checkbox buttons
+          .checkbox-button-text
+            .checkbox-button
+            .checkbox-text Можно курить
+          .checkbox-button-text
+            .checkbox-button.checkbox-button_checked
+              .check
+                img(src='./images/checked.svg')
+            .checkbox-text Можно с питомцами
+          .checkbox-button-text
+            .checkbox-button.checkbox-button_checked
+              .check
+                img(src='./images/checked.svg')
+            .checkbox-text Можно пригласить гостей (до 10 человек)
+        .radio-buttons
+          h3 radio buttons
+          .row
+            .radio-button-text 
+              .radio-button.radio-button_checked
+                .check-circle
+              .radio-text.radio-text_checked Мужчина
+            .radio-button-text 
+              .radio-button
+              .radio-text Женщина
+        .toggle-buttons 
+          h3 toggle
+          .toggle-button-text
+            .toggle-button.toggle-button_checked 
+              .toggle-button__circle.toggle-button__circle_checked
+            .toggle-text Получать спецпредложения
+          .toggle-button-text
+            .toggle-button
+             .toggle-button__circle
+            .toggle-text Получать спецпредложения

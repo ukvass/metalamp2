@@ -21,13 +21,36 @@
 }
 
 body {
-  font-family: Montserrat, sans-serif;
-  font-weight: normal;
+  font-family: Montserrat;
   font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  background: #E5E5E5;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+  max-width: 1440px;
+  background: #FFFFFF;
 }
 
 .logo {
   margin: 30px 0px 0px 30px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .column {
@@ -39,14 +62,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 140px;
-}
-
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0px auto;
-  max-width: 1440px;
 }
 
 .input-block {
@@ -61,30 +76,30 @@ body {
 }
 
 .text-wrap {
-  width: 320px;
+  max-width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 5px;
 }
 
-.item-name {
+h3 {
   color: #1f2041;
   font-weight: 700;
   font-size: 12px;
+  line-height: 15px;
   text-transform: uppercase;
+  margin: 0px 0px 5px 0px;
 }
 
 .item-state {
   font-weight: 400;
-  font-size: 12px;
-  text-transform: uppercase;
+  opacity: 0.5;
 }
 
-input {
+.input {
   width: 320px;
   height: 44px;
   font-family: Montserrat, sans-serif;
@@ -98,9 +113,238 @@ input {
   padding-inline: 15px;
 }
 
-input:hover {
+.input_dd {
+  opacity: 0.75;
+}
+
+.input_small {
+  width: 150px;
+}
+
+.input_medium {
+  width: 266px;
+}
+
+.input_hover {
   border: 1px solid rgba(31, 32, 65, 0.5);
   opacity: 0.75;
+}
+
+.input:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  opacity: 0.75;
+}
+
+.dropdowns-row {
+  margin: 0px 0px 40px 63px;
+  max-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.small-dropdown-block {
+  margin: 0px 20px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.medium-dropdown-block {
+  margin: 0px 0px 41px 63px;
+}
+
+.column-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 140px 0px 0px 126px;
+}
+
+.checkbox-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 41px;
+}
+
+.checkbox-buttons h3 {
+  margin-bottom: 16px;
+}
+
+.checkbox-button-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.checkbox-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.checkbox-button_checked {
+  border: 1px solid #bc9cff;
+}
+
+.check img {
+  margin: 4px 4px;
+}
+
+.checkbox-text {
+  max-width: 192px;
+  line-height: 18px;
+  opacity: 0.5;
+}
+
+.radio-buttons {
+  max-width: 221px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 37px;
+}
+
+.radio-buttons h3 {
+  margin-bottom: 16px;
+}
+
+.radio-button-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 20px;
+  line-height: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radio-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.radio-button_checked {
+  border: 1px solid #BC9CFF;
+}
+
+.check-circle {
+  margin: 3px 3px;
+  width: 12px;
+  height: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 10px;
+}
+
+.radio-text {
+  opacity: 0.5;
+}
+
+.radio-text_checked {
+  opacity: 0.75;
+}
+
+.toggle-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 41px;
+}
+
+.toggle-buttons h3 {
+  margin-bottom: 16px;
+}
+
+.toggle-button-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 14px;
+}
+
+.toggle-button {
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.toggle-button_checked {
+  border: 1px solid #BC9CFF;
+}
+
+.toggle-button__circle {
+  width: 12px;
+  height: 12px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  margin: 3px 4px;
+}
+
+.toggle-button__circle_checked {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  margin: 3px 22px;
+}
+
+.toggle-text {
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
 }
 /*# sourceMappingURL=formelements.css.map */
     </style>
@@ -108,20 +352,111 @@ input:hover {
   <body>
     <div class="wrapper">
       <div class="logo"> <img src="../colorsandtype/images/logo_1.svg"></div>
-      <div class="column">
-        <div class="input-block">
-          <div class="text-wrap">
-            <div class="item-name">text field</div>
-            <div class="item-state">default</div>
+      <div class="row"> 
+        <div class="column">
+          <div class="input-block">
+            <div class="text-wrap">
+              <h3>text field</h3>
+              <h3 class="item-state">default</h3>
+            </div>
+            <input class="input" placeholder="Email">
           </div>
-          <input placeholder="Email">
+          <div class="input-block">
+            <div class="text-wrap">
+              <h3>text field</h3>
+              <h3 class="item-state">hover/focus</h3>
+            </div>
+            <input class="input input_hover" value="This is pretty awesome">
+          </div>
+          <div class="input-block">
+            <div class="text-wrap">
+              <h3>dropdown</h3>
+            </div>
+            <input class="input input_dd" placeholder="Сколько гостей">
+          </div>
+          <div class="input-block">
+            <div class="text-wrap">
+              <h3>masked text field</h3>
+            </div>
+            <input class="input" placeholder="ДД.ММ.ГГГГ">
+          </div>
+          <div class="dropdowns-row">
+            <div class="small-dropdown-block">
+              <div class="text-wrap">
+                <h3>date dropdown</h3>
+              </div>
+              <input class="input input_small input_dd" placeholder="ДД.ММ.ГГГГ">
+            </div>
+            <div class="small-dropdown-block">
+              <div class="text-wrap">
+                <h3>date dropdown</h3>
+              </div>
+              <input class="input input_small input_dd" placeholder="19.08.2019">
+            </div>
+          </div>
+          <div class="medium-dropdown-block">
+            <div class="text-wrap">
+              <h3>filter date dropdown</h3>
+            </div>
+            <input class="input input_medium input_dd" placeholder="19 авг - 23 авг">
+          </div>
+          <div class="medium-dropdown-block">
+            <div class="text-wrap">
+              <h3>subscription text field</h3>
+            </div>
+            <input class="input input_medium" placeholder="Email">
+          </div>
         </div>
-        <div class="input-block">
-          <div class="text-wrap">
-            <div class="item-name">text field</div>
-            <div class="item-state">hover/focus</div>
+      </div>
+      <div class="column-2">
+        <div class="checkbox-buttons">
+          <h3>checkbox buttons</h3>
+          <div class="checkbox-button-text">
+            <div class="checkbox-button"></div>
+            <div class="checkbox-text">Можно курить</div>
           </div>
-          <input placeholder="This is pretty awesome">
+          <div class="checkbox-button-text">
+            <div class="checkbox-button checkbox-button_checked">
+              <div class="check"><img src="./images/checked.svg"></div>
+            </div>
+            <div class="checkbox-text">Можно с питомцами</div>
+          </div>
+          <div class="checkbox-button-text">
+            <div class="checkbox-button checkbox-button_checked">
+              <div class="check"><img src="./images/checked.svg"></div>
+            </div>
+            <div class="checkbox-text">Можно пригласить гостей (до 10 человек)</div>
+          </div>
+        </div>
+        <div class="radio-buttons">
+          <h3>radio buttons</h3>
+          <div class="row">
+            <div class="radio-button-text"> 
+              <div class="radio-button radio-button_checked">
+                <div class="check-circle"></div>
+              </div>
+              <div class="radio-text radio-text_checked">Мужчина</div>
+            </div>
+            <div class="radio-button-text"> 
+              <div class="radio-button"></div>
+              <div class="radio-text">Женщина</div>
+            </div>
+          </div>
+        </div>
+        <div class="toggle-buttons"> 
+          <h3>toggle</h3>
+          <div class="toggle-button-text">
+            <div class="toggle-button toggle-button_checked"> 
+              <div class="toggle-button__circle toggle-button__circle_checked"></div>
+            </div>
+            <div class="toggle-text">Получать спецпредложения</div>
+          </div>
+          <div class="toggle-button-text">
+            <div class="toggle-button">
+              <div class="toggle-button__circle"></div>
+            </div>
+            <div class="toggle-text">Получать спецпредложения</div>
+          </div>
         </div>
       </div>
     </div>
