@@ -176,6 +176,10 @@ h3 {
   margin: 140px 0px 0px 126px;
 }
 
+.column-2 h3 {
+  margin-bottom: 16px;
+}
+
 .checkbox-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,10 +189,6 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 41px;
-}
-
-.checkbox-buttons h3 {
-  margin-bottom: 16px;
 }
 
 .checkbox-button-text {
@@ -236,10 +236,6 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 37px;
-}
-
-.radio-buttons h3 {
-  margin-bottom: 16px;
 }
 
 .radio-button-text {
@@ -299,10 +295,6 @@ h3 {
   margin-bottom: 41px;
 }
 
-.toggle-buttons h3 {
-  margin-bottom: 16px;
-}
-
 .toggle-button-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,6 +338,64 @@ h3 {
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
 }
+
+.like-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.like-button {
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.like-button_checked {
+  border: 1px solid #BC9CFF;
+}
+
+.like img {
+  margin: 5px 0px 5px 5px;
+}
+
+.counter {
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(31, 32, 65, 0.25);
+  position: absolute;
+  margin: -22.5px 0px 0px 21px;
+}
+
+.counter_checked {
+  color: #BC9CFF;
+}
+
+.rate-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rate-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
 /*# sourceMappingURL=formelements.css.map */
     </style>
   </head>
@@ -369,41 +419,29 @@ h3 {
             <input class="input input_hover" value="This is pretty awesome">
           </div>
           <div class="input-block">
-            <div class="text-wrap">
-              <h3>dropdown</h3>
-            </div>
+            <h3>dropdown</h3>
             <input class="input input_dd" placeholder="Сколько гостей">
           </div>
           <div class="input-block">
-            <div class="text-wrap">
-              <h3>masked text field</h3>
-            </div>
+            <h3>masked text field</h3>
             <input class="input" placeholder="ДД.ММ.ГГГГ">
           </div>
           <div class="dropdowns-row">
             <div class="small-dropdown-block">
-              <div class="text-wrap">
-                <h3>date dropdown</h3>
-              </div>
+              <h3>date dropdown</h3>
               <input class="input input_small input_dd" placeholder="ДД.ММ.ГГГГ">
             </div>
             <div class="small-dropdown-block">
-              <div class="text-wrap">
-                <h3>date dropdown</h3>
-              </div>
+              <h3>date dropdown</h3>
               <input class="input input_small input_dd" placeholder="19.08.2019">
             </div>
           </div>
           <div class="medium-dropdown-block">
-            <div class="text-wrap">
-              <h3>filter date dropdown</h3>
-            </div>
+            <h3>filter date dropdown</h3>
             <input class="input input_medium input_dd" placeholder="19 авг - 23 авг">
           </div>
           <div class="medium-dropdown-block">
-            <div class="text-wrap">
-              <h3>subscription text field</h3>
-            </div>
+            <h3>subscription text field</h3>
             <input class="input input_medium" placeholder="Email">
           </div>
         </div>
@@ -456,6 +494,26 @@ h3 {
               <div class="toggle-button__circle"></div>
             </div>
             <div class="toggle-text">Получать спецпредложения</div>
+          </div>
+        </div>
+        <div class="like-buttons">
+          <h3>like button</h3>
+          <div class="row">
+            <div class="like-button">
+              <div class="like"><img src="./images/favorite_border.svg"></div>
+              <div class="counter">2</div>
+            </div>
+            <div class="button like-button like-button_checked">
+              <div class="like"><img src="./images/favorite.svg"></div>
+              <div class="counter counter_checked">12</div>
+            </div>
+          </div>
+        </div>
+        <div class="rate-buttons">
+          <h3>rate button</h3>
+          <div class="row">
+            <div class="rate-button"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star_border.svg"></div>
+            <div class="rate-button"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"></div>
           </div>
         </div>
       </div>

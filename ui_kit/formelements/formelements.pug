@@ -21,29 +21,23 @@ html(lang="en")
               h3.item-state hover/focus
             input(value='This is pretty awesome').input.input_hover
           .input-block
-            .text-wrap
-              h3 dropdown
+            h3 dropdown
             input(placeholder='Сколько гостей').input.input_dd
           .input-block
-            .text-wrap
-              h3 masked text field
+            h3 masked text field
             input(placeholder='ДД.ММ.ГГГГ').input
           .dropdowns-row
             .small-dropdown-block
-              .text-wrap
-                h3 date dropdown
+              h3 date dropdown
               input(placeholder='ДД.ММ.ГГГГ').input.input_small.input_dd
             .small-dropdown-block
-              .text-wrap
-                h3 date dropdown
+              h3 date dropdown
               input(placeholder='19.08.2019').input.input_small.input_dd
           .medium-dropdown-block
-            .text-wrap
-              h3 filter date dropdown
+            h3 filter date dropdown
             input(placeholder='19 авг - 23 авг').input.input_medium.input_dd
           .medium-dropdown-block
-            .text-wrap
-              h3 subscription text field
+            h3 subscription text field
             input(placeholder='Email').input.input_medium
       .column-2
         .checkbox-buttons
@@ -81,3 +75,29 @@ html(lang="en")
             .toggle-button
              .toggle-button__circle
             .toggle-text Получать спецпредложения
+        .like-buttons
+          h3 like button
+          .row
+            .like-button
+              .like
+                img(src='./images/favorite_border.svg')
+              .counter 2
+            .button.like-button.like-button_checked
+              .like
+                img(src='./images/favorite.svg')
+              .counter.counter_checked 12
+        .rate-buttons
+          h3 rate button
+          .row
+            .rate-button
+              img(src='./images/star.svg')
+              img(src='./images/star.svg')
+              img(src='./images/star.svg')
+              img(src='./images/star.svg')
+              img(src='./images/star_border.svg')
+            .rate-button
+              img(src='./images/star.svg')
+              img(src='./images/star.svg')
+              img(src='./images/star.svg')
+              img(src='./images/star.svg')
+              img(src='./images/star.svg')
