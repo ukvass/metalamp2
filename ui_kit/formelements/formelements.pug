@@ -9,6 +9,7 @@ html(lang="en")
       .logo  
         img(src='../colorsandtype/images/logo_1.svg')
       .row  
+        
         .column
           .input-block
             .text-wrap
@@ -39,6 +40,7 @@ html(lang="en")
           .medium-dropdown-block
             h3 subscription text field
             input(placeholder='Email').input.input_medium
+      
       .column-2
         .checkbox-buttons
           h3 checkbox buttons
@@ -58,7 +60,7 @@ html(lang="en")
         .radio-buttons
           h3 radio buttons
           .row
-            .radio-button-text 
+            .radio-button-text
               .radio-button.radio-button_checked
                 .check-circle
               .radio-text.radio-text_checked Мужчина
@@ -101,3 +103,41 @@ html(lang="en")
               img(src='./images/star.svg')
               img(src='./images/star.svg')
               img(src='./images/star.svg')
+      
+      .column-3
+        .range-slider
+          .text-wrap
+            h3 range slider
+            h3.item-state 5 000₽ - 10 000₽
+          .slider
+            .slider__filled
+            .slider__circle
+            .slider__circle.slider__circle_second
+        .buttons
+          h3 buttons
+          .click-me
+            .click-me-button
+              h3.button-text-white click me
+            .click-me-button.click-me-button_light
+              h3.button-text-white click me
+            .click-me-button.click-me-button_border
+              h3.button-text-blue click me
+            .click-me-button.click-me-button_border.click-me-button_light
+              h3.button-text-blue click me
+            h3.button-text-blue click me
+            h3.button-text-grey click me
+          .pay-button
+            h3.button-text-white перейти к оплате
+            img(src='./images/arrow_forward.svg')
+        .pagination
+          h3 pagination
+          .page-numbers 
+            .page-numbers__number.page-numbers__number_current 1
+            .page-numbers__number 2
+            .page-numbers__number 3
+            .page-numbers__number ...
+            .page-numbers__number 15
+            .page-numbers__number.page-numbers__number_arrow
+              img(src='./images/arrow_forward.svg')
+          .toggle-text 1 – 12 из 100+ вариантов аренды
+
