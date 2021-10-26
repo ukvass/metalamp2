@@ -23,121 +23,140 @@ html(lang="en")
             input(value='This is pretty awesome').input.input_hover
           .input-block
             h3 dropdown
-            input(placeholder='Сколько гостей').input.input_dd
+            .row
+              input(placeholder='Сколько гостей').input.input_dd
+              button.button-input
+                img(src='./images/expand_more.svg')
           .input-block
             h3 masked text field
             input(placeholder='ДД.ММ.ГГГГ').input
           .dropdowns-row
             .small-dropdown-block
               h3 date dropdown
-              input(placeholder='ДД.ММ.ГГГГ').input.input_small.input_dd
+              .row
+                input(placeholder='ДД.ММ.ГГГГ').input.input_small.input_dd
+                button.button-input.button-input_small
+                  img(src='./images/expand_more.svg')
             .small-dropdown-block
               h3 date dropdown
-              input(placeholder='19.08.2019').input.input_small.input_dd
+              .row
+                input(placeholder='19.08.2019').input.input_small.input_dd
+                button.button-input.button-input_small
+                  img(src='./images/expand_more.svg')
           .medium-dropdown-block
             h3 filter date dropdown
-            input(placeholder='19 авг - 23 авг').input.input_medium.input_dd
+            .row
+              input(placeholder='19 авг - 23 авг').input.input_medium.input_dd
+              button.button-input.button-input_medium
+                img(src='./images/expand_more.svg')
           .medium-dropdown-block
             h3 subscription text field
-            input(placeholder='Email').input.input_medium
+            .row
+              input(placeholder='Email').input.input_medium
+              button.button-input.button-input_medium 
+                img(src='./images/arrow_forward.svg')
       
-      .column-2
-        .checkbox-buttons
-          h3 checkbox buttons
-          .checkbox-button-text
-            .checkbox-button
-            .checkbox-text Можно курить
-          .checkbox-button-text
-            .checkbox-button.checkbox-button_checked
-              .check
-                img(src='./images/checked.svg')
-            .checkbox-text Можно с питомцами
-          .checkbox-button-text
-            .checkbox-button.checkbox-button_checked
-              .check
-                img(src='./images/checked.svg')
-            .checkbox-text Можно пригласить гостей (до 10 человек)
-        .radio-buttons
-          h3 radio buttons
-          .row
-            .radio-button-text
-              .radio-button.radio-button_checked
-                .check-circle
-              .radio-text.radio-text_checked Мужчина
-            .radio-button-text 
-              .radio-button
-              .radio-text Женщина
-        .toggle-buttons 
-          h3 toggle
-          .toggle-button-text
-            .toggle-button.toggle-button_checked 
-              .toggle-button__circle.toggle-button__circle_checked
-            .toggle-text Получать спецпредложения
-          .toggle-button-text
-            .toggle-button
-             .toggle-button__circle
-            .toggle-text Получать спецпредложения
-        .like-buttons
-          h3 like button
-          .row
-            .like-button
-              .like
-                img(src='./images/favorite_border.svg')
-              .counter 2
-            .button.like-button.like-button_checked
-              .like
-                img(src='./images/favorite.svg')
-              .counter.counter_checked 12
-        .rate-buttons
-          h3 rate button
-          .row
-            .rate-button
-              img(src='./images/star.svg')
-              img(src='./images/star.svg')
-              img(src='./images/star.svg')
-              img(src='./images/star.svg')
-              img(src='./images/star_border.svg')
-            .rate-button
-              img(src='./images/star.svg')
-              img(src='./images/star.svg')
-              img(src='./images/star.svg')
-              img(src='./images/star.svg')
-              img(src='./images/star.svg')
+        .column-2
+          .checkbox-buttons
+            h3 checkbox buttons
+            .checkbox-button-text
+              .checkbox-button
+              .checkbox-text Можно курить
+            .checkbox-button-text
+              .checkbox-button.checkbox-button_checked
+                .check
+                  img(src='./images/checked.svg')
+              .checkbox-text Можно с питомцами
+            .checkbox-button-text
+              .checkbox-button.checkbox-button_checked
+                .check
+                  img(src='./images/checked.svg')
+              .checkbox-text Можно пригласить гостей (до 10 человек)
+          .radio-buttons
+            h3 radio buttons
+            .row
+              .radio-button-text
+                .radio-button.radio-button_checked
+                  .check-circle
+                .radio-text.radio-text_checked Мужчина
+              .radio-button-text 
+                .radio-button
+                .radio-text Женщина
+          .toggle-buttons 
+            h3 toggle
+            .toggle-button-text
+              .toggle-button.toggle-button_checked 
+                .toggle-button__circle.toggle-button__circle_checked
+              .toggle-text Получать спецпредложения
+            .toggle-button-text
+              .toggle-button
+                .toggle-button__circle
+              .toggle-text Получать спецпредложения
+          .like-buttons
+            h3 like button
+            .row
+              .like-button
+                .like
+                  img(src='./images/favorite_border.svg')
+                .counter 2
+              .button.like-button.like-button_checked
+                .like
+                  img(src='./images/favorite.svg')
+                .counter.counter_checked 12
+          .rate-buttons
+            h3 rate button
+            .row
+              .rate-button
+                img(src='./images/star.svg')
+                img(src='./images/star.svg')
+                img(src='./images/star.svg')
+                img(src='./images/star.svg')
+                img(src='./images/star_border.svg')
+              .rate-button
+                img(src='./images/star.svg')
+                img(src='./images/star.svg')
+                img(src='./images/star.svg')
+                img(src='./images/star.svg')
+                img(src='./images/star.svg')
+        
+        .column-3
+          .range-slider
+            .text-wrap
+              h3 range slider
+              h3.item-state 5 000₽ - 10 000₽
+            .slider
+              .slider__filled
+              .slider__circle
+              .slider__circle.slider__circle_second
+          .buttons
+            h3 buttons
+            .click-me
+              .click-me-button
+                h3.button-text-white click me
+              .click-me-button.click-me-button_light
+                h3.button-text-white click me
+              .click-me-button.click-me-button_border
+                h3.button-text-blue click me
+              .click-me-button.click-me-button_border.click-me-button_light
+                h3.button-text-blue click me
+              h3.button-text-blue click me
+              h3.button-text-grey click me
+            .pay-button
+              h3.button-text-white перейти к оплате
+              img(src='./images/arrow_forward_white.svg')
+          .pagination
+            h3 pagination
+            .page-numbers 
+              .page-numbers__number.page-numbers__number_current 1
+              .page-numbers__number 2
+              .page-numbers__number 3
+              .page-numbers__number ...
+              .page-numbers__number 15
+              .page-numbers__number.page-numbers__number_arrow
+                img(src='./images/arrow_forward_white.svg')
+            .toggle-text 1 – 12 из 100+ вариантов аренды
+
+      .row
+
       
-      .column-3
-        .range-slider
-          .text-wrap
-            h3 range slider
-            h3.item-state 5 000₽ - 10 000₽
-          .slider
-            .slider__filled
-            .slider__circle
-            .slider__circle.slider__circle_second
-        .buttons
-          h3 buttons
-          .click-me
-            .click-me-button
-              h3.button-text-white click me
-            .click-me-button.click-me-button_light
-              h3.button-text-white click me
-            .click-me-button.click-me-button_border
-              h3.button-text-blue click me
-            .click-me-button.click-me-button_border.click-me-button_light
-              h3.button-text-blue click me
-            h3.button-text-blue click me
-            h3.button-text-grey click me
-          .pay-button
-            h3.button-text-white перейти к оплате
-            img(src='./images/arrow_forward.svg')
-        .pagination
-          h3 pagination
-          .page-numbers 
-            .page-numbers__number.page-numbers__number_current 1
-            .page-numbers__number 2
-            .page-numbers__number 3
-            .page-numbers__number ...
-            .page-numbers__number 15
-            .page-numbers__number.page-numbers__number_arrow
-              img(src='./images/arrow_forward.svg')
-          .toggle-text 1 – 12 из 100+ вариантов аренды
 

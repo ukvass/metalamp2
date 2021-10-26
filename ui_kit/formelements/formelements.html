@@ -135,6 +135,33 @@ h3 {
   opacity: 0.75;
 }
 
+.button-input {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 0px 277px;
+}
+
+.button-input_small {
+  margin: 0px 0px 0px 107px;
+}
+
+.button-input_medium {
+  margin: 0px 0px 0px 222px;
+}
+
 .dropdowns-row {
   margin: 0px 0px 40px 63px;
   max-width: 320px;
@@ -337,6 +364,7 @@ h3 {
 .toggle-text {
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
+  width: 210px;
 }
 
 .like-buttons {
@@ -604,7 +632,10 @@ h3 {
           </div>
           <div class="input-block">
             <h3>dropdown</h3>
-            <input class="input input_dd" placeholder="Сколько гостей">
+            <div class="row">
+              <input class="input input_dd" placeholder="Сколько гостей">
+              <button class="button-input"><img src="./images/expand_more.svg"></button>
+            </div>
           </div>
           <div class="input-block">
             <h3>masked text field</h3>
@@ -613,141 +644,154 @@ h3 {
           <div class="dropdowns-row">
             <div class="small-dropdown-block">
               <h3>date dropdown</h3>
-              <input class="input input_small input_dd" placeholder="ДД.ММ.ГГГГ">
+              <div class="row">
+                <input class="input input_small input_dd" placeholder="ДД.ММ.ГГГГ">
+                <button class="button-input button-input_small"><img src="./images/expand_more.svg"></button>
+              </div>
             </div>
             <div class="small-dropdown-block">
               <h3>date dropdown</h3>
-              <input class="input input_small input_dd" placeholder="19.08.2019">
+              <div class="row">
+                <input class="input input_small input_dd" placeholder="19.08.2019">
+                <button class="button-input button-input_small"><img src="./images/expand_more.svg"></button>
+              </div>
             </div>
           </div>
           <div class="medium-dropdown-block">
             <h3>filter date dropdown</h3>
-            <input class="input input_medium input_dd" placeholder="19 авг - 23 авг">
+            <div class="row">
+              <input class="input input_medium input_dd" placeholder="19 авг - 23 авг">
+              <button class="button-input button-input_medium"><img src="./images/expand_more.svg"></button>
+            </div>
           </div>
           <div class="medium-dropdown-block">
             <h3>subscription text field</h3>
-            <input class="input input_medium" placeholder="Email">
+            <div class="row">
+              <input class="input input_medium" placeholder="Email">
+              <button class="button-input button-input_medium"> <img src="./images/arrow_forward.svg"></button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="column-2">
-        <div class="checkbox-buttons">
-          <h3>checkbox buttons</h3>
-          <div class="checkbox-button-text">
-            <div class="checkbox-button"></div>
-            <div class="checkbox-text">Можно курить</div>
-          </div>
-          <div class="checkbox-button-text">
-            <div class="checkbox-button checkbox-button_checked">
-              <div class="check"><img src="./images/checked.svg"></div>
+        <div class="column-2">
+          <div class="checkbox-buttons">
+            <h3>checkbox buttons</h3>
+            <div class="checkbox-button-text">
+              <div class="checkbox-button"></div>
+              <div class="checkbox-text">Можно курить</div>
             </div>
-            <div class="checkbox-text">Можно с питомцами</div>
-          </div>
-          <div class="checkbox-button-text">
-            <div class="checkbox-button checkbox-button_checked">
-              <div class="check"><img src="./images/checked.svg"></div>
-            </div>
-            <div class="checkbox-text">Можно пригласить гостей (до 10 человек)</div>
-          </div>
-        </div>
-        <div class="radio-buttons">
-          <h3>radio buttons</h3>
-          <div class="row">
-            <div class="radio-button-text">
-              <div class="radio-button radio-button_checked">
-                <div class="check-circle"></div>
+            <div class="checkbox-button-text">
+              <div class="checkbox-button checkbox-button_checked">
+                <div class="check"><img src="./images/checked.svg"></div>
               </div>
-              <div class="radio-text radio-text_checked">Мужчина</div>
+              <div class="checkbox-text">Можно с питомцами</div>
             </div>
-            <div class="radio-button-text"> 
-              <div class="radio-button"></div>
-              <div class="radio-text">Женщина</div>
+            <div class="checkbox-button-text">
+              <div class="checkbox-button checkbox-button_checked">
+                <div class="check"><img src="./images/checked.svg"></div>
+              </div>
+              <div class="checkbox-text">Можно пригласить гостей (до 10 человек)</div>
+            </div>
+          </div>
+          <div class="radio-buttons">
+            <h3>radio buttons</h3>
+            <div class="row">
+              <div class="radio-button-text">
+                <div class="radio-button radio-button_checked">
+                  <div class="check-circle"></div>
+                </div>
+                <div class="radio-text radio-text_checked">Мужчина</div>
+              </div>
+              <div class="radio-button-text"> 
+                <div class="radio-button"></div>
+                <div class="radio-text">Женщина</div>
+              </div>
+            </div>
+          </div>
+          <div class="toggle-buttons"> 
+            <h3>toggle</h3>
+            <div class="toggle-button-text">
+              <div class="toggle-button toggle-button_checked"> 
+                <div class="toggle-button__circle toggle-button__circle_checked"></div>
+              </div>
+              <div class="toggle-text">Получать спецпредложения</div>
+            </div>
+            <div class="toggle-button-text">
+              <div class="toggle-button">
+                <div class="toggle-button__circle"></div>
+              </div>
+              <div class="toggle-text">Получать спецпредложения</div>
+            </div>
+          </div>
+          <div class="like-buttons">
+            <h3>like button</h3>
+            <div class="row">
+              <div class="like-button">
+                <div class="like"><img src="./images/favorite_border.svg"></div>
+                <div class="counter">2</div>
+              </div>
+              <div class="button like-button like-button_checked">
+                <div class="like"><img src="./images/favorite.svg"></div>
+                <div class="counter counter_checked">12</div>
+              </div>
+            </div>
+          </div>
+          <div class="rate-buttons">
+            <h3>rate button</h3>
+            <div class="row">
+              <div class="rate-button"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star_border.svg"></div>
+              <div class="rate-button"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"></div>
             </div>
           </div>
         </div>
-        <div class="toggle-buttons"> 
-          <h3>toggle</h3>
-          <div class="toggle-button-text">
-            <div class="toggle-button toggle-button_checked"> 
-              <div class="toggle-button__circle toggle-button__circle_checked"></div>
+        <div class="column-3">
+          <div class="range-slider">
+            <div class="text-wrap">
+              <h3>range slider</h3>
+              <h3 class="item-state">5 000₽ - 10 000₽</h3>
             </div>
-            <div class="toggle-text">Получать спецпредложения</div>
-          </div>
-          <div class="toggle-button-text">
-            <div class="toggle-button">
-              <div class="toggle-button__circle"></div>
-            </div>
-            <div class="toggle-text">Получать спецпредложения</div>
-          </div>
-        </div>
-        <div class="like-buttons">
-          <h3>like button</h3>
-          <div class="row">
-            <div class="like-button">
-              <div class="like"><img src="./images/favorite_border.svg"></div>
-              <div class="counter">2</div>
-            </div>
-            <div class="button like-button like-button_checked">
-              <div class="like"><img src="./images/favorite.svg"></div>
-              <div class="counter counter_checked">12</div>
+            <div class="slider">
+              <div class="slider__filled"></div>
+              <div class="slider__circle"></div>
+              <div class="slider__circle slider__circle_second"></div>
             </div>
           </div>
-        </div>
-        <div class="rate-buttons">
-          <h3>rate button</h3>
-          <div class="row">
-            <div class="rate-button"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star_border.svg"></div>
-            <div class="rate-button"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"><img src="./images/star.svg"></div>
+          <div class="buttons">
+            <h3>buttons</h3>
+            <div class="click-me">
+              <div class="click-me-button">
+                <h3 class="button-text-white">click me</h3>
+              </div>
+              <div class="click-me-button click-me-button_light">
+                <h3 class="button-text-white">click me</h3>
+              </div>
+              <div class="click-me-button click-me-button_border">
+                <h3 class="button-text-blue">click me</h3>
+              </div>
+              <div class="click-me-button click-me-button_border click-me-button_light">
+                <h3 class="button-text-blue">click me</h3>
+              </div>
+              <h3 class="button-text-blue">click me</h3>
+              <h3 class="button-text-grey">click me</h3>
+            </div>
+            <div class="pay-button">
+              <h3 class="button-text-white">перейти к оплате</h3><img src="./images/arrow_forward_white.svg">
+            </div>
+          </div>
+          <div class="pagination">
+            <h3>pagination</h3>
+            <div class="page-numbers"> 
+              <div class="page-numbers__number page-numbers__number_current">1</div>
+              <div class="page-numbers__number">2</div>
+              <div class="page-numbers__number">3</div>
+              <div class="page-numbers__number">...</div>
+              <div class="page-numbers__number">15</div>
+              <div class="page-numbers__number page-numbers__number_arrow"><img src="./images/arrow_forward_white.svg"></div>
+            </div>
+            <div class="toggle-text">1 – 12 из 100+ вариантов аренды</div>
           </div>
         </div>
       </div>
-      <div class="column-3">
-        <div class="range-slider">
-          <div class="text-wrap">
-            <h3>range slider</h3>
-            <h3 class="item-state">5 000₽ - 10 000₽</h3>
-          </div>
-          <div class="slider">
-            <div class="slider__filled"></div>
-            <div class="slider__circle"></div>
-            <div class="slider__circle slider__circle_second"></div>
-          </div>
-        </div>
-        <div class="buttons">
-          <h3>buttons</h3>
-          <div class="click-me">
-            <div class="click-me-button">
-              <h3 class="button-text-white">click me</h3>
-            </div>
-            <div class="click-me-button click-me-button_light">
-              <h3 class="button-text-white">click me</h3>
-            </div>
-            <div class="click-me-button click-me-button_border">
-              <h3 class="button-text-blue">click me</h3>
-            </div>
-            <div class="click-me-button click-me-button_border click-me-button_light">
-              <h3 class="button-text-blue">click me</h3>
-            </div>
-            <h3 class="button-text-blue">click me</h3>
-            <h3 class="button-text-grey">click me</h3>
-          </div>
-          <div class="pay-button">
-            <h3 class="button-text-white">перейти к оплате</h3><img src="./images/arrow_forward.svg">
-          </div>
-        </div>
-        <div class="pagination">
-          <h3>pagination</h3>
-          <div class="page-numbers"> 
-            <div class="page-numbers__number page-numbers__number_current">1</div>
-            <div class="page-numbers__number">2</div>
-            <div class="page-numbers__number">3</div>
-            <div class="page-numbers__number">...</div>
-            <div class="page-numbers__number">15</div>
-            <div class="page-numbers__number page-numbers__number_arrow"><img src="./images/arrow_forward.svg"></div>
-          </div>
-          <div class="toggle-text">1 – 12 из 100+ вариантов аренды</div>
-        </div>
-      </div>
+      <div class="row"></div>
     </div>
   </body>
 </html>

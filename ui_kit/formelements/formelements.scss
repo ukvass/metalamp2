@@ -104,6 +104,25 @@ h3 {
   }
 }
 
+.button-input {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 0px 277px;
+  &_small {
+    margin: 0px 0px 0px 107px;
+  }
+  &_medium {
+    margin: 0px 0px 0px 222px;
+  }
+}
+
 .dropdowns-row {
   margin: 0px 0px 40px 63px;
   max-width: 320px;
@@ -247,6 +266,7 @@ h3 {
 .toggle-text {
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
+  width: 210px;
 }
 
 .like-buttons {

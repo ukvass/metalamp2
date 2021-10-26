@@ -131,6 +131,33 @@ h3 {
   opacity: 0.75;
 }
 
+.button-input {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 0px 277px;
+}
+
+.button-input_small {
+  margin: 0px 0px 0px 107px;
+}
+
+.button-input_medium {
+  margin: 0px 0px 0px 222px;
+}
+
 .dropdowns-row {
   margin: 0px 0px 40px 63px;
   max-width: 320px;
@@ -333,6 +360,7 @@ h3 {
 .toggle-text {
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
+  width: 210px;
 }
 
 .like-buttons {
