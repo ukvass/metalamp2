@@ -14,8 +14,6 @@
   font-style: normal;
 }
 
-@import "components/input/input.css";
-
 body {
   font-family: Montserrat;
   font-size: 14px;
@@ -104,16 +102,23 @@ h3 {
   }
 }
 
-.button-input {
+button {
   border: none;
   background: transparent;
   cursor: pointer;
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.button-input {
+  width: 44px;
+  height: 44px;
+  position: absolute;
   margin: 0px 0px 0px 277px;
   &_small {
     margin: 0px 0px 0px 107px;
@@ -121,6 +126,10 @@ h3 {
   &_medium {
     margin: 0px 0px 0px 222px;
   }
+}
+
+.button-input_medium img {
+  margin-top: 2px;
 }
 
 .dropdowns-row {
@@ -172,11 +181,14 @@ h3 {
   margin-right: 10px;
   &_checked {
     border: 1px solid rgba(188, 156, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-.check img {
-  margin: 4px 4px;
+.checkbox-button img {
+  margin-bottom: 1px;
 }
 
 .checkbox-text {
@@ -213,7 +225,6 @@ h3 {
 }
 
 .check-circle {
-  margin: 3px 3px;
   width: 12px;
   height: 12px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -222,9 +233,10 @@ h3 {
 
 .radio-text {
   opacity: 0.5;
-  &_checked {
-    opacity: 0.75;
-  }
+}
+
+.radio-text-checked {
+  opacity: 0.75;
 }
 
 .toggle-buttons {
@@ -255,10 +267,9 @@ h3 {
     height: 12px;
     background: rgba(31, 32, 65, 0.25);
     border-radius: 10px;
-    margin: 3px 4px;
     &_checked {
       background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-      margin: 3px 22px;
+      margin: 2px 18px;
     }
   }
 }
@@ -266,7 +277,7 @@ h3 {
 .toggle-text {
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
-  width: 210px;
+  width: 240px;
 }
 
 .like-buttons {
@@ -279,6 +290,8 @@ h3 {
   width: 40px;
   height: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
   border-radius: 10px;
   margin-right: 10px;
@@ -287,8 +300,13 @@ h3 {
   }
 }
 
-.like img {
-  margin: 5px 0px 5px 5px;
+.like {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -4px;
 }
 
 .counter {
@@ -296,7 +314,7 @@ h3 {
   line-height: 12px;
   color: rgba(31, 32, 65, 0.25);
   position: absolute;
-  margin: -22.5px 0px 0px 21px;
+  margin: 0px 0px 0px 16px;
   &_checked {
     color:#BC9CFF;
   }
@@ -309,6 +327,8 @@ h3 {
 
 .rate-button {
   display: flex;
+  justify-content: space-between ;
+  width: 120px;
   margin-right: 20px;
 }
 
@@ -369,7 +389,6 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   max-width: 240px;
-  margin-bottom: 14px;
 }
 
 .click-me-button {
@@ -378,7 +397,6 @@ h3 {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border: solid 2px #8BA4F9;
   border-radius: 22px;
-  margin: 0px 20px 30px 0px;
   &_light {
     opacity: 0.5;
   }
@@ -387,12 +405,12 @@ h3 {
   }
 }
 
-.click-me h3 {
-  margin-right: 20px;
+.click-me-margin {
+  margin: 0px 20px 30px 0px;
 }
 
 .click-me-button h3 {
-  margin: 12px 16px;
+  margin: 0px 0px;
 }
 
 .button-text-white {
@@ -412,15 +430,16 @@ h3 {
   height: 44px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
+  display: flex;
 }
 
 .pay-button h3 {
-  margin: 15px 0px 0px 95px;
+  margin: 0px;
 }
 
 .pay-button img {
   position: absolute;
-  margin: -17px 0px 0px 289px;
+  margin-left: 136px;
 }
 
 .pagination {
@@ -440,9 +459,11 @@ h3 {
     align-items: center;
     justify-content: center;
     color: rgba(31, 32, 65, 0.5);
+    font-weight: normal;
     &_current {
       background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
       color: #FFFFFF;
+      font-weight: bold;
     }
     &_arrow {
       background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
