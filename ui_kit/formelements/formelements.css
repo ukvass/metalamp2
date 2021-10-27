@@ -313,6 +313,8 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 10px;
+  position: relative;
+  right: 3px;
 }
 
 .radio-text {
@@ -364,12 +366,13 @@ button {
   height: 12px;
   background: rgba(31, 32, 65, 0.25);
   border-radius: 10px;
+  margin-left: -1px;
 }
 
 .toggle-button__circle_checked {
   background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  margin: 2px 18px;
+  margin-left: 16px;
 }
 
 .toggle-text {
@@ -583,9 +586,7 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
 }
 
 .pay-button h3 {
@@ -594,7 +595,8 @@ button {
 
 .pay-button img {
   position: absolute;
-  margin-left: 136px;
+  right: 12px;
+  top: 13px;
 }
 
 .pagination {

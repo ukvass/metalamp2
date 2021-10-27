@@ -4,13 +4,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #911E42;
+    background-color: #fff;
     font-family: Montserrat, sans-serif;
     font-size: x-large;
 }
 
 ul {
-    list-style:armenian;
+    list-style: circle;
     margin: 25% 0px 0px 0px;
 }
 
@@ -20,5 +20,5 @@ li {
 
 .link {
     text-decoration: none;
-    color: #F5F5DC;
+    color: rgba(31, 32, 65, 0.75);
 }
