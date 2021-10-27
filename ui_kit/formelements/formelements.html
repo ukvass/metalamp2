@@ -33,6 +33,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0px auto;
   max-width: 1440px;
   background: #FFFFFF;
@@ -52,6 +56,17 @@ body {
           flex-direction: row;
 }
 
+.top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 62px 0px 66px 63px;
+}
+
 .column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +75,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 140px 126px 0px 0px;
+  margin: 0px 126px 0px 0px;
 }
 
 .input-block {
@@ -208,7 +223,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 140px 140px 0px 0px;
+  margin: 0px 140px 0px 0px;
 }
 
 .column-2 h3 {
@@ -406,6 +421,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-weight: normal;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
@@ -465,7 +481,7 @@ button {
 }
 
 .column-3 {
-  margin: 140px 141px 0px 0px;
+  margin: 0px 141px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -649,13 +665,64 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
+
+.dropdown-row {
+  margin: 0px 0px 0px 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.medium-text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 266px;
+}
+
+.dropdown-column {
+  margin: 0px 181px 55px 0px;
+}
+
+.row-expanded-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+}
+
+.dropdown-expanded-input {
+  border-radius: 4px 4px 0px 0px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-bottom: none;
+}
+
+.dropdown-expanded-list {
+  max-width: 266px;
+  height: 119px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 0px 0px 4px 4px;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+}
 /*# sourceMappingURL=formelements.css.map */
     </style>
   </head>
   <body>
     <div class="wrapper">
       <div class="logo"> <img src="../colorsandtype/images/logo_1.svg"></div>
-      <div class="row"> 
+      <div class="top-row"> 
         <div class="column">
           <div class="input-block">
             <div class="text-wrap">
@@ -832,7 +899,33 @@ button {
           </div>
         </div>
       </div>
-      <div class="row"></div>
+      <div class="row">
+        <div class="dropdown-row">
+          <div class="dropdown-column">
+            <div class="medium-dropdown-block">
+              <div class="medium-text-wrap">
+                <h3>dropdown</h3>
+                <h3 class="item-state">default</h3>
+              </div>
+              <div class="row">
+                <input class="input input_medium input_dd" placeholder="2 спальни, 2 кровати...">
+                <button class="button-input button-input_medium"><img src="./images/expand_more.svg"></button>
+              </div>
+            </div>
+            <div class="medium-dropdown-block">
+              <div class="medium-text-wrap">
+                <h3>dropdown</h3>
+                <h3 class="item-state">expanded</h3>
+              </div>
+              <div class="row-expanded-input">
+                <input class="input input_medium input_dd dropdown-expanded-input" placeholder="2 спальни, 2 кровати...">
+                <button class="button-input button-input_medium"><img src="./images/expand_more.svg"></button>
+              </div>
+              <div class="dropdown-expanded-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

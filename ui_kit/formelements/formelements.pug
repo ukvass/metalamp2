@@ -8,8 +8,7 @@ html(lang="en")
     .wrapper
       .logo  
         img(src='../colorsandtype/images/logo_1.svg')
-      .row  
-        
+      .top-row  
         .column
           .input-block
             .text-wrap
@@ -55,7 +54,6 @@ html(lang="en")
               input(placeholder='Email').input.input_medium
               button.button-input.button-input_medium 
                 img(src='./images/arrow_forward.svg')
-      
         .column-2
           .checkbox-buttons
             h3 checkbox buttons
@@ -118,7 +116,6 @@ html(lang="en")
                 img(src='./images/star.svg')
                 img(src='./images/star.svg')
                 img(src='./images/star.svg')
-        
         .column-3
           .range-slider
             .text-wrap
@@ -155,7 +152,28 @@ html(lang="en")
               button.page-numbers__number.page-numbers__number_arrow
                 img(src='./images/arrow_forward_white.svg')
             .toggle-text 1 – 12 из 100+ вариантов аренды
-
       .row
+        .dropdown-row
+          .dropdown-column
+            .medium-dropdown-block
+              .medium-text-wrap
+                h3 dropdown
+                h3.item-state default
+              .row
+                input(placeholder='2 спальни, 2 кровати...').input.input_medium.input_dd
+                button.button-input.button-input_medium
+                  img(src='./images/expand_more.svg')
+            .medium-dropdown-block
+              .medium-text-wrap
+                h3 dropdown
+                h3.item-state expanded
+              .row-expanded-input
+                input(placeholder='2 спальни, 2 кровати...').input.input_medium.input_dd.dropdown-expanded-input
+                button.button-input.button-input_medium
+                  img(src='./images/expand_more.svg')
+              .dropdown-expanded-list
+              
+
+
       
 
