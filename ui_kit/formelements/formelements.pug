@@ -172,6 +172,84 @@ html(lang="en")
                 button.button-input.button-input_medium
                   img(src='./images/expand_more.svg')
               .dropdown-expanded-list
+                .dropdown-expanded-list__item 
+                  h3 спальни
+                  .dropdown-expanded-list__counter 
+                    button.dropdown-expanded-list__count-button -
+                    h3.dropdown-expanded-list__digit 2
+                    button.dropdown-expanded-list__count-button +
+                .dropdown-expanded-list__item 
+                  h3 кровати
+                  .dropdown-expanded-list__counter 
+                    button.dropdown-expanded-list__count-button -
+                    h3.dropdown-expanded-list__digit 2
+                    button.dropdown-expanded-list__count-button +
+                .dropdown-expanded-list__item 
+                  h3 ванные комнаты
+                  .dropdown-expanded-list__counter 
+                    button.dropdown-expanded-list__count-button.dropdown-expanded-list__count-button_inactive -
+                    h3.dropdown-expanded-list__digit 0
+                    button.dropdown-expanded-list__count-button +
+        .dropdown-column-2
+          .wide-dropdown-block
+            h3 dropdown
+            .row
+              input(placeholder='Сколько гостей').input.input_dd.dropdown-expanded-input
+              button.button-input
+                img(src='./images/expand_more.svg')  
+            .dropdown-expanded-list.dropdown-expanded-list_wide
+              .dropdown-expanded-list__item 
+                h3 взрослые
+                .dropdown-expanded-list__counter 
+                  button.dropdown-expanded-list__count-button.dropdown-expanded-list__count-button_inactive -
+                  h3.dropdown-expanded-list__digit 0
+                  button.dropdown-expanded-list__count-button +
+              .dropdown-expanded-list__item 
+                h3 дети
+                .dropdown-expanded-list__counter 
+                  button.dropdown-expanded-list__count-button.dropdown-expanded-list__count-button_inactive -
+                  h3.dropdown-expanded-list__digit 0
+                  button.dropdown-expanded-list__count-button +
+              .dropdown-expanded-list__item 
+                h3 младенцы
+                .dropdown-expanded-list__counter 
+                  button.dropdown-expanded-list__count-button.dropdown-expanded-list__count-button_inactive -
+                  h3.dropdown-expanded-list__digit 0
+                  button.dropdown-expanded-list__count-button +
+              .dropdown-expanded-list__item.dropdown-expanded-list__item_textbuttons
+                button
+                button.button-text-blue применить
+        .dropdown-column-2
+          .wide-dropdown-block
+            h3 dropdown
+            .row
+              input(placeholder='3 гостя').input.input_dd.dropdown-expanded-input
+              button.button-input
+                img(src='./images/expand_more.svg')
+            .dropdown-expanded-list.dropdown-expanded-list_wide
+              .dropdown-expanded-list__item
+                h3 взрослые
+                .dropdown-expanded-list__counter 
+                  button.dropdown-expanded-list__count-button -
+                  h3.dropdown-expanded-list__digit 2
+                  button.dropdown-expanded-list__count-button +
+              .dropdown-expanded-list__item 
+                h3 дети
+                .dropdown-expanded-list__counter 
+                  button.dropdown-expanded-list__count-button -
+                  h3.dropdown-expanded-list__digit 1
+                  button.dropdown-expanded-list__count-button +
+              .dropdown-expanded-list__item 
+                h3 младенцы
+                .dropdown-expanded-list__counter 
+                  button.dropdown-expanded-list__count-button.dropdown-expanded-list__count-button_inactive -
+                  h3.dropdown-expanded-list__digit 0
+                  button.dropdown-expanded-list__count-button +
+              .dropdown-expanded-list__item.dropdown-expanded-list__item_textbuttons
+                button.button-text-blue очистить
+                button.button-text-blue применить
+          
+
               
 
 

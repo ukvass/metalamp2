@@ -44,7 +44,7 @@ body {
 .top-row {
   display: flex;
   flex-direction: row;
-  margin: 62px 0px 66px 63px;
+  margin: 62px 0px 66px 126px;
 }
 
 .column {
@@ -54,7 +54,7 @@ body {
 }
 
 .input-block {
-  margin: 0px 0px 20px 63px;
+  margin: 0px 0px 20px 0px;
   display: flex;
   flex-direction: column;
 }
@@ -140,7 +140,7 @@ button {
 }
 
 .dropdowns-row {
-  margin: 0px 0px 40px 63px;
+  margin: 0px 0px 40px 0px;
   max-width: 320px;
   display: flex;
   flex-direction: row;
@@ -154,7 +154,7 @@ button {
 }
 
 .medium-dropdown-block {
-  margin: 0px 0px 41px 63px;
+  margin: 0px 0px 41px 0px;
 }
 
 .column-2 {
@@ -484,7 +484,7 @@ button {
 }
 
 .dropdown-row {
-  margin: 0px 0px 0px 63px;
+  margin: 0px 0px 0px 126px;
   display: flex;
   flex-direction: row;
 }
@@ -517,4 +517,55 @@ button {
   border: 1px solid rgba(31, 32, 65, 0.5);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 15px;
+    align-items: center;
+    margin: 7px 0px 0px 14px;
+    &_textbuttons {
+      margin: 19px 0px 0px 10px;
+    }
+  }
+  &__counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 15px;
+    align-items: center;
+    width: 92px;
+    margin-right: 7px;
+  }
+  &__count-button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 22px;
+    color: rgba(31, 32, 65, 0.5);
+    font-weight: normal;
+    &_inactive {
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      color: rgba(31, 32, 65, 0.25);
+    }
+  }
+  &__digit {
+    margin-top: 3px;
+  }
+  &_wide {
+    max-width: 320px;
+    height: 159px;
+  }
 }
+
+.wide-dropdown-block {
+  margin-right: 72px;
+}
+
+.dropdown-column-2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0px;
+}
+
+
