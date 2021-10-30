@@ -34,12 +34,14 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0px auto;
-  max-width: 1440px;
+  max-width: 1159px;
+  padding: 140px 141px 132px 140px;
   background: #FFFFFF;
 }
 
 .logo {
-  margin: 30px 0px 0px 30px;
+  margin: -110px 0px 0px -110px;
+  position: absolute;
 }
 
 .row {
@@ -52,6 +54,10 @@ body {
           flex-direction: row;
 }
 
+.date-dropdown-margin {
+  margin-bottom: 40px;
+}
+
 .top-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,10 +66,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 62px 0px 66px 126px;
+  margin: 0px 0px 66px 0px;
 }
 
 .column {
+  max-width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,6 +219,7 @@ button {
 }
 
 .column-2 {
+  max-width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,7 +227,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0px 140px 0px 0px;
+  margin: 0px 132px 0px 0px;
 }
 
 .column-2 h3 {
@@ -477,7 +485,6 @@ button {
 }
 
 .column-3 {
-  margin: 0px 141px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -551,11 +558,7 @@ button {
 }
 
 .click-me {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: block;
   max-width: 240px;
 }
 
@@ -662,17 +665,6 @@ button {
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
 
-.dropdown-row {
-  margin: 0px 0px 0px 126px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .medium-text-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -701,6 +693,10 @@ button {
 .dropdown-expanded-input {
   border-radius: 4px 4px 0px 0px;
   border: 1px solid rgba(31, 32, 65, 0.5);
+  border-bottom: none;
+}
+
+.dropdown-expanded-input:hover {
   border-bottom: none;
 }
 
@@ -766,6 +762,7 @@ button {
 .dropdown-expanded-list__count-button_inactive {
   border: 1px solid rgba(31, 32, 65, 0.25);
   color: rgba(31, 32, 65, 0.25);
+  cursor: default;
 }
 
 .dropdown-expanded-list__digit {
@@ -790,5 +787,45 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 0px;
+}
+
+.checkbox-column {
+  max-width: 291px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 181px 40px 0px;
+}
+
+.expandable-checkbox-list {
+  max-width: 266px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.expandable-checkbox-list_closed {
+  margin-bottom: 20px;
+}
+
+.expandable-checkbox-list h3 {
+  margin-top: 15px;
+}
+
+.expandable-checkbox-list .button-input {
+  position: relative;
+  margin: 0;
 }
 /*# sourceMappingURL=formelements.css.map */

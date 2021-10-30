@@ -38,12 +38,14 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0px auto;
-  max-width: 1440px;
+  max-width: 1159px;
+  padding: 140px 141px 132px 140px;
   background: #FFFFFF;
 }
 
 .logo {
-  margin: 30px 0px 0px 30px;
+  margin: -110px 0px 0px -110px;
+  position: absolute;
 }
 
 .row {
@@ -56,6 +58,10 @@ body {
           flex-direction: row;
 }
 
+.date-dropdown-margin {
+  margin-bottom: 40px;
+}
+
 .top-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,10 +70,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 62px 0px 66px 126px;
+  margin: 0px 0px 66px 0px;
 }
 
 .column {
+  max-width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,6 +223,7 @@ button {
 }
 
 .column-2 {
+  max-width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,7 +231,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0px 140px 0px 0px;
+  margin: 0px 132px 0px 0px;
 }
 
 .column-2 h3 {
@@ -481,7 +489,6 @@ button {
 }
 
 .column-3 {
-  margin: 0px 141px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,11 +562,7 @@ button {
 }
 
 .click-me {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: block;
   max-width: 240px;
 }
 
@@ -666,17 +669,6 @@ button {
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
 
-.dropdown-row {
-  margin: 0px 0px 0px 126px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .medium-text-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -705,6 +697,10 @@ button {
 .dropdown-expanded-input {
   border-radius: 4px 4px 0px 0px;
   border: 1px solid rgba(31, 32, 65, 0.5);
+  border-bottom: none;
+}
+
+.dropdown-expanded-input:hover {
   border-bottom: none;
 }
 
@@ -770,6 +766,7 @@ button {
 .dropdown-expanded-list__count-button_inactive {
   border: 1px solid rgba(31, 32, 65, 0.25);
   color: rgba(31, 32, 65, 0.25);
+  cursor: default;
 }
 
 .dropdown-expanded-list__digit {
@@ -795,13 +792,53 @@ button {
           flex-direction: column;
   margin-right: 0px;
 }
+
+.checkbox-column {
+  max-width: 291px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 181px 40px 0px;
+}
+
+.expandable-checkbox-list {
+  max-width: 266px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.expandable-checkbox-list_closed {
+  margin-bottom: 20px;
+}
+
+.expandable-checkbox-list h3 {
+  margin-top: 15px;
+}
+
+.expandable-checkbox-list .button-input {
+  position: relative;
+  margin: 0;
+}
 /*# sourceMappingURL=formelements.css.map */
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <div class="logo"> <img src="../colorsandtype/images/logo_1.svg"></div>
       <div class="top-row"> 
+        <div class="logo"> <img src="../colorsandtype/images/logo_1.svg"></div>
         <div class="column">
           <div class="input-block">
             <div class="text-wrap">
@@ -826,9 +863,9 @@ button {
           </div>
           <div class="input-block">
             <h3>masked text field</h3>
-            <input class="input" placeholder="ДД.ММ.ГГГГ">
+            <input class="input date-dropdown-margin" placeholder="ДД.ММ.ГГГГ">
           </div>
-          <div class="dropdowns-row">
+          <div class="row date-dropdown-margin">
             <div class="small-dropdown-block">
               <h3>date dropdown</h3>
               <div class="row">
@@ -1105,6 +1142,48 @@ button {
                 <button class="button-text-blue">применить</button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="chekbox-row"> 
+        <div class="checkbox-column">
+          <div class="expandable-checkbox-list expandable-checkbox-list_closed">
+            <h3>expandable checkbox list</h3>
+            <button class="button-input"><img src="./images/expand_more.svg"></button>
+          </div>
+          <div class="expandable-checkbox-list">
+            <h3>expandable checkbox list</h3>
+            <button class="button-input"><img src="./images/expand_less.svg"></button>
+          </div>
+          <div class="checkbox-button-text">
+            <button class="checkbox-button"></button>
+            <div class="checkbox-text">Завтрак</div>
+          </div>
+          <div class="checkbox-button-text">
+            <button class="checkbox-button checkbox-button_checked">
+              <div class="check"><img src="./images/checked.svg"></div>
+            </button>
+            <div class="checkbox-text">Письменный стол</div>
+          </div>
+          <div class="checkbox-button-text">
+            <button class="checkbox-button checkbox-button_checked">
+              <div class="check"><img src="./images/checked.svg"></div>
+            </button>
+            <div class="checkbox-text">Стул для кормления</div>
+          </div>
+          <div class="checkbox-button-text">
+            <button class="checkbox-button checkbox-button_checked">
+              <div class="check"><img src="./images/checked.svg"></div>
+            </button>
+            <div class="checkbox-text">Кроватка</div>
+          </div>
+          <div class="checkbox-button-text">
+            <button class="checkbox-button"></button>
+            <div class="checkbox-text">Телевизор</div>
+          </div>
+          <div class="checkbox-button-text">
+            <button class="checkbox-button"></button>
+            <div class="checkbox-text">Шампунь</div>
           </div>
         </div>
       </div>

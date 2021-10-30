@@ -6,9 +6,9 @@ html(lang="en")
       include formelements.css
   body
     .wrapper
-      .logo  
-        img(src='../colorsandtype/images/logo_1.svg')
       .top-row  
+        .logo  
+          img(src='../colorsandtype/images/logo_1.svg')
         .column
           .input-block
             .text-wrap
@@ -28,8 +28,8 @@ html(lang="en")
                 img(src='./images/expand_more.svg')
           .input-block
             h3 masked text field
-            input(placeholder='ДД.ММ.ГГГГ').input
-          .dropdowns-row
+            input(placeholder='ДД.ММ.ГГГГ').input.date-dropdown-margin
+          .row.date-dropdown-margin
             .small-dropdown-block
               h3 date dropdown
               .row
@@ -248,10 +248,38 @@ html(lang="en")
               .dropdown-expanded-list__item.dropdown-expanded-list__item_textbuttons
                 button.button-text-blue очистить
                 button.button-text-blue применить
+      .chekbox-row 
+        .checkbox-column
+          .expandable-checkbox-list.expandable-checkbox-list_closed
+            h3 expandable checkbox list
+            button.button-input
+              img(src='./images/expand_more.svg')
+          .expandable-checkbox-list
+            h3 expandable checkbox list
+            button.button-input
+              img(src='./images/expand_less.svg')
+          .checkbox-button-text
+              button.checkbox-button
+              .checkbox-text Завтрак
+          .checkbox-button-text
+            button.checkbox-button.checkbox-button_checked
+              .check
+                img(src='./images/checked.svg')
+            .checkbox-text Письменный стол
+          .checkbox-button-text
+            button.checkbox-button.checkbox-button_checked
+              .check
+                img(src='./images/checked.svg')
+            .checkbox-text Стул для кормления
+          .checkbox-button-text
+            button.checkbox-button.checkbox-button_checked
+              .check
+                img(src='./images/checked.svg')
+            .checkbox-text Кроватка
+          .checkbox-button-text
+            button.checkbox-button
+            .checkbox-text Телевизор
+          .checkbox-button-text
+            button.checkbox-button
+            .checkbox-text Шампунь
           
-
-              
-
-
-      
-

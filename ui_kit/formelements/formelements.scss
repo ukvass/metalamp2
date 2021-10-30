@@ -28,12 +28,14 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0px auto;
-  max-width: 1440px;
+  max-width: 1159px;
+  padding: 140px 141px 132px 140px;
   background: #FFFFFF;
 }
 
 .logo {
-  margin: 30px 0px 0px 30px;
+  margin: -110px 0px 0px -110px;
+  position: absolute;
 }
 
 .row {
@@ -41,13 +43,18 @@ body {
   flex-direction: row;
 }
 
+.date-dropdown-margin {
+  margin-bottom: 40px;
+}
+
 .top-row {
   display: flex;
   flex-direction: row;
-  margin: 62px 0px 66px 126px;
+  margin: 0px 0px 66px 0px;
 }
 
 .column {
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   margin: 0px 126px 0px 0px;
@@ -158,9 +165,10 @@ button {
 }
 
 .column-2 {
+  max-width: 260px;
   display: flex;
   flex-direction: column;
-  margin: 0px 140px 0px 0px;
+  margin: 0px 132px 0px 0px;
 }
 
 .column-2 h3 {
@@ -344,7 +352,6 @@ button {
 }
 
 .column-3 {
-  margin: 0px 141px 0px 0px;
   display: flex;
   flex-direction: column;
 }
@@ -397,8 +404,7 @@ button {
 }
 
 .click-me {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   max-width: 240px;
 }
 
@@ -483,12 +489,6 @@ button {
   }
 }
 
-.dropdown-row {
-  margin: 0px 0px 0px 126px;
-  display: flex;
-  flex-direction: row;
-}
-
 .medium-text-wrap {
   display: flex;
   justify-content: space-between;
@@ -509,6 +509,9 @@ button {
   border-radius: 4px 4px 0px 0px;
   border: 1px solid rgba(31, 32, 65, 0.5);
   border-bottom: none;
+  &:hover {
+    border-bottom: none;
+  }
 }
 
 .dropdown-expanded-list {
@@ -547,6 +550,7 @@ button {
     &_inactive {
       border: 1px solid rgba(31, 32, 65, 0.25);
       color: rgba(31, 32, 65, 0.25);
+      cursor: default;
     }
   }
   &__digit {
@@ -568,4 +572,29 @@ button {
   margin-right: 0px;
 }
 
+.checkbox-column  {
+  max-width: 291px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 181px 40px 0px;
+}
 
+.expandable-checkbox-list {
+  max-width: 266px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  &_closed {
+    margin-bottom: 20px;
+  }
+}
+
+.expandable-checkbox-list h3 {
+  margin-top: 15px;
+}
+
+.expandable-checkbox-list .button-input {
+  position: relative;
+  margin: 0;
+}
