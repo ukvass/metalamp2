@@ -210,6 +210,11 @@ button {
   max-width: 192px;
   line-height: 18px;
   opacity: 0.5;
+  &_bold {
+    font-weight: bold;
+    opacity: 0.75;
+    max-width: 233px;
+  }
 }
 
 .radio-buttons {
@@ -597,4 +602,21 @@ button {
 .expandable-checkbox-list .button-input {
   position: relative;
   margin: 0;
+}
+
+.rich-checkbox-buttons {
+  margin-top: 16px;
+}
+
+.rich-checkbox-buttons > h3 {
+  margin-bottom: 16px;
+}
+
+.description-text {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.description-text-container {
+  width: 236px;
 }

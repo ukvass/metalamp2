@@ -293,6 +293,12 @@ button {
   opacity: 0.5;
 }
 
+.checkbox-text_bold {
+  font-weight: bold;
+  opacity: 0.75;
+  max-width: 233px;
+}
+
 .radio-buttons {
   max-width: 221px;
   display: -webkit-box;
@@ -832,6 +838,23 @@ button {
   position: relative;
   margin: 0;
 }
+
+.rich-checkbox-buttons {
+  margin-top: 16px;
+}
+
+.rich-checkbox-buttons > h3 {
+  margin-bottom: 16px;
+}
+
+.description-text {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.description-text-container {
+  width: 236px;
+}
 /*# sourceMappingURL=formelements.css.map */
     </style>
   </head>
@@ -1187,8 +1210,22 @@ button {
           </div>
         </div>
         <div class="dropdown-column-2">
-          <div class="checkbox-buttons"> 
+          <div class="rich-checkbox-buttons">
             <h3>rich checkbox buttons</h3>
+            <div class="checkbox-button-text">
+              <button class="checkbox-button"></button>
+              <div class="checkbox-text checkbox-text_bold">Широкий коридор</div>
+            </div>
+            <div class="description-text-container">
+              <div class="description-text">Ширина коридоров в номере не менее 91 см.</div>
+            </div>
+            <div class="checkbox-button-text">
+              <button class="checkbox-button"></button>
+              <div class="checkbox-text checkbox-text_bold">Помощник для инвалидов</div>
+            </div>
+            <div class="description-text-container">
+              <div class="description-text">На 1 этаже вас встретит специалист и проводит до номера.</div>
+            </div>
           </div>
         </div>
       </div>

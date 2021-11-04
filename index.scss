@@ -11,14 +11,19 @@ body {
 
 ul {
     list-style: circle;
-    margin: 25% 0px 0px 0px;
+    margin: 20%;
 }
 
 li {
     margin-bottom: 20px;
+    list-style: none;
 }
 
 .link {
     text-decoration: none;
     color: rgba(31, 32, 65, 0.75);
+    &:hover {
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        color: #fff;
+    }
 }
