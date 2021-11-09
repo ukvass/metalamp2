@@ -24,6 +24,18 @@ ul {
 li {
   margin-bottom: 20px;
   list-style: none;
+  position: relative;
+}
+
+li::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #8BA4F9;
+  position: absolute;
+  left: -25px;
+  top: 6px;
 }
 
 .link {
