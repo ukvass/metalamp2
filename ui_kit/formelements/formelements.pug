@@ -58,18 +58,14 @@ html(lang="en")
           .checkbox-buttons
             h3 checkbox buttons
             .checkbox-button-text
-              button.checkbox-button
-              .checkbox-text Можно курить
+              input(type="checkbox" id="cb1")
+              label(for="cb1").checkbox-text Можно курить
             .checkbox-button-text
-              button.checkbox-button.checkbox-button_checked
-                .check
-                  img(src='./images/checked.svg')
-              .checkbox-text Можно с питомцами
+              input(type="checkbox" id="cb2")
+              label(for="cb2").checkbox-text Можно с питомцами
             .checkbox-button-text
-              button.checkbox-button.checkbox-button_checked
-                .check
-                  img(src='./images/checked.svg')
-              .checkbox-text Можно пригласить гостей (до 10 человек)
+              input(type="checkbox" id="cb3")
+              label(for="cb3").checkbox-text Можно пригласить гостей (до 10 человек)
           .radio-buttons
             h3 radio buttons
             .row
@@ -259,8 +255,8 @@ html(lang="en")
             button.button-input
               img(src='./images/expand_less.svg')
           .checkbox-button-text
-              button.checkbox-button
-              .checkbox-text Завтрак
+            input(type="checkbox" id="cb4")
+            label(for="cb4").checkbox-text Завтрак
           .checkbox-button-text
             button.checkbox-button.checkbox-button_checked
               .check
