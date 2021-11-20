@@ -260,19 +260,17 @@ button {
   margin-bottom: 10px;
 }
 
-input[type="checkbox"] {
+/*input[type="checkbox"] {
   width: 20px;
   height: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
-  margin: 0px 10px 0px 0px;
+  margin:0px 10px 0px 0px;
   cursor: pointer;
-}
-
-input[type="checkbox"]:checked {
-  border: 1px solid #bc9cff;
-}
-
+  &:checked {
+    border: 1px solid rgba(188, 156, 255, 1);
+  }
+}*/
 input[type="checkbox"]:checked,
 input[type="checkbox"]:not(:checked),
 input[type="radio"]:checked,
@@ -300,10 +298,15 @@ input[type="radio"]:not(:checked) + label:before {
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   background-color: transparent;
+}
+
+input[type="radio"]:checked + label:before,
+input[type="checkbox"]:checked + label:before {
+  border: 1px solid #bc9cff;
 }
 
 input[type="checkbox"]:checked + label:before,
@@ -1018,15 +1021,18 @@ input[type="radio"]:checked + label:after {
             <h3>checkbox buttons</h3>
             <div class="checkbox-button-text">
               <input type="checkbox" id="cb1">
-              <label class="checkbox-text" for="cb1">Можно курить</label>
+              <label for="cb1"></label>
+              <div class="checkbox-text">Можно курить</div>
             </div>
             <div class="checkbox-button-text">
               <input type="checkbox" id="cb2">
-              <label class="checkbox-text" for="cb2">Можно с питомцами</label>
+              <label for="cb2"></label>
+              <div class="checkbox-text">Можно с питомцами</div>
             </div>
             <div class="checkbox-button-text">
               <input type="checkbox" id="cb3">
-              <label class="checkbox-text" for="cb3">Можно пригласить гостей (до 10 человек)</label>
+              <label for="cb3"></label>
+              <div class="checkbox-text">Можно пригласить гостей (до 10 человек)</div>
             </div>
           </div>
           <div class="radio-buttons">
@@ -1270,32 +1276,32 @@ input[type="radio"]:checked + label:after {
           </div>
           <div class="checkbox-button-text">
             <input type="checkbox" id="cb4">
-            <label class="checkbox-text" for="cb4">Завтрак</label>
+            <label for="cb4"></label>
+            <div class="checkbox-text">Завтрак</div>
           </div>
           <div class="checkbox-button-text">
-            <button class="checkbox-button checkbox-button_checked">
-              <div class="check"><img src="./images/checked.svg"></div>
-            </button>
+            <input type="checkbox" id="cb5">
+            <label for="cb5"></label>
             <div class="checkbox-text">Письменный стол</div>
           </div>
           <div class="checkbox-button-text">
-            <button class="checkbox-button checkbox-button_checked">
-              <div class="check"><img src="./images/checked.svg"></div>
-            </button>
+            <input type="checkbox" id="cb6">
+            <label for="cb6"></label>
             <div class="checkbox-text">Стул для кормления</div>
           </div>
           <div class="checkbox-button-text">
-            <button class="checkbox-button checkbox-button_checked">
-              <div class="check"><img src="./images/checked.svg"></div>
-            </button>
+            <input type="checkbox" id="cb7">
+            <label for="cb7"></label>
             <div class="checkbox-text">Кроватка</div>
           </div>
           <div class="checkbox-button-text">
-            <button class="checkbox-button"></button>
+            <input type="checkbox" id="cb8">
+            <label for="cb8"></label>
             <div class="checkbox-text">Телевизор</div>
           </div>
           <div class="checkbox-button-text">
-            <button class="checkbox-button"></button>
+            <input type="checkbox" id="cb9">
+            <label for="cb9"></label>
             <div class="checkbox-text">Шампунь</div>
           </div>
         </div>
@@ -1303,14 +1309,16 @@ input[type="radio"]:checked + label:after {
           <div class="rich-checkbox-buttons">
             <h3>rich checkbox buttons</h3>
             <div class="checkbox-button-text">
-              <button class="checkbox-button"></button>
+              <input type="checkbox" id="cb10">
+              <label for="cb10"></label>
               <div class="checkbox-text checkbox-text_bold">Широкий коридор</div>
             </div>
             <div class="description-text-container">
               <div class="description-text">Ширина коридоров в номере не менее 91 см.</div>
             </div>
             <div class="checkbox-button-text">
-              <button class="checkbox-button"></button>
+              <input type="checkbox" id="cb11">
+              <label for="cb11"></label>
               <div class="checkbox-text checkbox-text_bold">Помощник для инвалидов</div>
             </div>
             <div class="description-text-container">

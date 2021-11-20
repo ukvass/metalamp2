@@ -256,19 +256,17 @@ button {
   margin-bottom: 10px;
 }
 
-input[type="checkbox"] {
+/*input[type="checkbox"] {
   width: 20px;
   height: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
-  margin: 0px 10px 0px 0px;
+  margin:0px 10px 0px 0px;
   cursor: pointer;
-}
-
-input[type="checkbox"]:checked {
-  border: 1px solid #bc9cff;
-}
-
+  &:checked {
+    border: 1px solid rgba(188, 156, 255, 1);
+  }
+}*/
 input[type="checkbox"]:checked,
 input[type="checkbox"]:not(:checked),
 input[type="radio"]:checked,
@@ -296,10 +294,15 @@ input[type="radio"]:not(:checked) + label:before {
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   background-color: transparent;
+}
+
+input[type="radio"]:checked + label:before,
+input[type="checkbox"]:checked + label:before {
+  border: 1px solid #bc9cff;
 }
 
 input[type="checkbox"]:checked + label:before,
