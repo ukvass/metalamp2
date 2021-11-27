@@ -343,10 +343,10 @@ input[type="checkbox"]:not(:checked) + label:after {
 
 input[type="radio"]:checked + label:after,
 input[type="radio"]:not(:checked) + label:after {
-  left: 5px;
-  top: 5px;
-  width: 10px;
-  height: 10px;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
   border-radius: 100%;
   background-color: #bc9cff;
 }
@@ -1039,13 +1039,13 @@ input[type="radio"]:checked + label:after {
             <h3>radio buttons</h3>
             <div class="row">
               <div class="radio-button-text">
-                <button class="radio-button radio-button_checked">
-                  <div class="check-circle"></div>
-                </button>
+                <input type="radio" id="rb1">
+                <label for="rb1"></label>
                 <div class="radio-text-checked">Мужчина</div>
               </div>
               <div class="radio-button-text"> 
-                <button class="radio-button"></button>
+                <input type="radio" id="rb2">
+                <label for="rb2"></label>
                 <div class="radio-text">Женщина</div>
               </div>
             </div>

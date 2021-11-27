@@ -339,10 +339,10 @@ input[type="checkbox"]:not(:checked) + label:after {
 
 input[type="radio"]:checked + label:after,
 input[type="radio"]:not(:checked) + label:after {
-  left: 5px;
-  top: 5px;
-  width: 10px;
-  height: 10px;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
   border-radius: 100%;
   background-color: #bc9cff;
 }
