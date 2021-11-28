@@ -57,6 +57,7 @@ body {
   margin: 0px 0px 0px 20px;
 }
 
+.header-logged-in,
 .header-logged-out {
   margin-top: 40px;
 }
@@ -129,10 +130,6 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   color: white;
-}
-
-.header-logged-in {
-  margin: 40px 0px 0px 0px;
 }
 
 .nav-logged-in {
@@ -231,11 +228,13 @@ body {
   width: 260px;
   height: 44px;
   background: transparent;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid #1f2041;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
   color: rgba(31, 32, 65, 0.25);
+  padding-inline: 15px;
+  opacity: 0.25;
 }
 
 .arrow {
