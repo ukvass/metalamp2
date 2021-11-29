@@ -49,6 +49,7 @@ body {
     }
 }
 
+.header-logged-in,
 .header-logged-out {
     margin-top: 40px;
 }
@@ -108,10 +109,6 @@ body {
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         color: white;
     }
-}
-
-.header-logged-in {
-    margin: 40px 0px 0px 0px;
 }
 
 .nav-logged-in {
@@ -190,10 +187,12 @@ body {
     width: 260px;
     height: 44px;
     background: transparent;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid rgba(31, 32, 65, 1);
     box-sizing: border-box;
     border-radius: 4px;
     color: rgba(31, 32, 65, 0.25);
+    padding-inline: 15px;
+    opacity: 0.25;
 }
 
 .arrow {
