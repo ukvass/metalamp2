@@ -7,36 +7,21 @@ html(lang="en")
   body
     .circle
       img(src="images/logo_1.svg")
-  
+
+    mixin color-block(name, codename="#1F2041")
+      .color-blocks__item
+        .color-blocks__block(class=attributes.class)
+        .color-blocks__name #{name}
+          .color-blocks__codename #{codename}
+        
     .color-blocks
-      .color-blocks__item
-        .color-blocks__block
-        .color-blocks__name Dark Shade 100%
-          .color-blocks__codename #1F2041
-      .color-blocks__item
-        .color-blocks__block.color-blocks__block_75
-        .color-blocks__name Dark Shade 75%
-          .color-blocks__codename #1F2041
-      .color-blocks__item
-        .color-blocks__block.color-blocks__block_50
-        .color-blocks__name Dark Shade 50%
-          .color-blocks__codename #1F2041
-      .color-blocks__item
-        .color-blocks__block.color-blocks__block_25
-        .color-blocks__name Dark Shade 25%
-          .color-blocks__codename #1F2041
-      .color-blocks__item
-        .color-blocks__block.color-blocks__block_5
-        .color-blocks__name Dark Shade 5%
-          .color-blocks__codename #1F2041
-      .color-blocks__item
-        .color-blocks__block.color-blocks__block_purple
-        .color-blocks__name Purple
-          .color-blocks__codename #BC9CFF
-      .color-blocks__item
-        .color-blocks__block.color-blocks__block_green
-        .color-blocks__name Green
-          .color-blocks__codename #6FCF97
+      +color-block('Dark Shade 100%')
+      +color-block('Dark Shade 75%')(class="color-blocks__block_75")
+      +color-block('Dark Shade 50%')(class="color-blocks__block_50")
+      +color-block('Dark Shade 25%')(class="color-blocks__block_25")
+      +color-block('Dark Shade 5%')(class="color-blocks__block_5")
+      +color-block('Purple', '#BC9CFF')(class="color-blocks__block_purple")
+      +color-block('Green', '#6FCF97')(class="color-blocks__block_green")
     
     .header-blocks
       .header-blocks__item
