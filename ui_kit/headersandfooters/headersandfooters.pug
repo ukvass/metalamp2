@@ -8,9 +8,11 @@ html(lang="ru")
     .circle
       img(src='../colorsandtype/images/logo_1.svg')
     
+    - let logosource = './images/Logo.svg';
+
     .header.header-logged-out
       .logo
-        img(src='images/logo.svg')    
+        img(src=logosource)    
       .nav
         .nav__item.nav__item_bold О нас
         .nav__item Услуги
@@ -29,7 +31,7 @@ html(lang="ru")
     
     .header.header-logged-in
       .logo
-        img(src='images/logo.svg')
+        img(src=logosource)
       .nav.nav-logged-in
         .nav__item.nav__item_bold О нас
         .nav__item Услуги
@@ -47,7 +49,7 @@ html(lang="ru")
       .container-footer
         .footer__logotext
           .footer__logo
-            img(src='images/logo.svg')
+            img(src=logosource)
           .footer__text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
         .footer-list.footer-list_navigation
           .footer-list__item.footer-list__item_head Навигация
@@ -85,7 +87,7 @@ html(lang="ru")
 
     .footer-mobile.footer-mobile-uikit
       .footer-mobile__logo
-        img(src="images/logo.svg")
+        img(src=logosource)
       .copyright-text.footer-mobile__copyright-text Copyright © 2018 Toxin отель. Все права защищены.
       .social
         a(href="https://twitter.com/") 
