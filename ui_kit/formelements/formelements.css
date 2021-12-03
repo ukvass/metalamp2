@@ -642,7 +642,7 @@ input[type=radio]:checked + label:after {
 }
 
 .expandable-checkbox-list {
-  max-width: 266px;
+  width: 266px;
   height: 44px;
   display: flex;
   justify-content: space-between;
@@ -661,7 +661,8 @@ input[type=radio]:checked + label:after {
   margin: 0;
 }
 
-.rich-checkbox-buttons {
+.rich-checkbox-buttons,
+.bullet-list {
   margin-top: 16px;
 }
 
@@ -675,5 +676,12 @@ input[type=radio]:checked + label:after {
 }
 
 .description-text-container {
-  width: 236px;
+  padding-top: 5px;
+  width: 230px;
+}
+
+ul {
+  list-style: disc;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
 }/*# sourceMappingURL=formelements.css.map */

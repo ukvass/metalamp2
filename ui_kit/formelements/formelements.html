@@ -646,7 +646,7 @@ input[type=radio]:checked + label:after {
 }
 
 .expandable-checkbox-list {
-  max-width: 266px;
+  width: 266px;
   height: 44px;
   display: flex;
   justify-content: space-between;
@@ -665,7 +665,8 @@ input[type=radio]:checked + label:after {
   margin: 0;
 }
 
-.rich-checkbox-buttons {
+.rich-checkbox-buttons,
+.bullet-list {
   margin-top: 16px;
 }
 
@@ -679,7 +680,14 @@ input[type=radio]:checked + label:after {
 }
 
 .description-text-container {
-  width: 236px;
+  padding-top: 5px;
+  width: 230px;
+}
+
+ul {
+  list-style: disc;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
 }/*# sourceMappingURL=formelements.css.map */
     </style>
   </head>
@@ -1039,19 +1047,33 @@ input[type=radio]:checked + label:after {
             <div class="checkbox-button-text">
               <input type="checkbox" id="cb10">
               <label for="cb10"></label>
-              <div class="checkbox-text checkbox-text_bold">Широкий коридор</div>
-            </div>
-            <div class="description-text-container">
-              <div class="description-text">Ширина коридоров в номере не менее 91 см.</div>
+              <div class="column">
+                <div class="checkbox-text checkbox-text_bold">Широкий коридор</div>
+                <div class="description-text-container">
+                  <div class="description-text">Ширина коридоров в номере не менее 91 см.</div>
+                </div>
+              </div>
             </div>
             <div class="checkbox-button-text">
               <input type="checkbox" id="cb11">
               <label for="cb11"></label>
-              <div class="checkbox-text checkbox-text_bold">Помощник для инвалидов</div>
+              <div class="column">
+                <div class="checkbox-text checkbox-text_bold">Помощник для инвалидов</div>
+                <div class="description-text-container">
+                  <div class="description-text">На 1 этаже вас встретит специалист и проводит до номера.</div>
+                </div>
+              </div>
             </div>
-            <div class="description-text-container">
-              <div class="description-text">На 1 этаже вас встретит специалист и проводит до номера.</div>
-            </div>
+          </div>
+        </div>
+        <div class="dropdown-column-2"> 
+          <div class="bullet-list">
+            <h3>bullet list</h3>
+            <ul>
+              <li>Нельзя с питомцами</li>
+              <li>Без вечеринок и мероприятий</li>
+              <li>Время прибытия — после 13:00, а выезд до 12:00</li>
+            </ul>
           </div>
         </div>
       </div>
