@@ -311,18 +311,33 @@ html(lang="en")
               li Время прибытия — после 13:00, а выезд до 12:00
       
       .row
-        .column
-          .row
-            span.material-icons insert_emoticon
+        .features-column
+          .feature-item
+            span.material-icons.smile-icon insert_emoticon
             .column
-              .checkbox-text.checkbox-text_bold Комфорт
-              .checkbox-text Шумопоглощающие стены
-          .horizontal-divider
-          .row
-            span.material-icons location_city
+              .features-text Комфорт
+              .features-text.features-text_main Шумопоглощающие стены
+              .horizontal-divider
+          .feature-item
+            span.material-icons.house-icon location_city
             .column
-              .checkbox-text.checkbox-text_bold Удобство
-              .checkbox-text Окно в каждой из спален
-          .horizontal-divider
+              .features-text Удобство
+              .features-text.features-text_main Окно в каждой из спален
+              .horizontal-divider
+        .feedback-column
+          .feature-item.user-feedback
+            .avatar-image
+              img(src='./images/murad.svg')
+            .column
+              .features-text Мурад Сарафанов
+              .features-text.features-text_main 5 дней назад
+          .row
+            button.like-button.like-button_checked.feedback-like
+                .like
+                  img(src='./images/favorite.svg')
+                .counter.counter_checked 12
+            .features-text.features-text_main.feedback-text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+
+
 
             

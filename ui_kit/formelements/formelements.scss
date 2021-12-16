@@ -227,18 +227,6 @@ button {
   margin-bottom: 10px;
 }
 
-/*input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  margin:0px 10px 0px 0px;
-  cursor: pointer;
-  &:checked {
-    border: 1px solid rgba(188, 156, 255, 1);
-  }
-}*/
-
 input[type="checkbox"]:checked, 
 input[type="checkbox"]:not(:checked), 
 input[type="radio"]:checked, 
@@ -759,9 +747,60 @@ li {
   }
 }
 
+.features-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: row;
+}
+
 .horizontal-divider {
   width: 280px;
   height: 1px;
   background-color:rgba(31, 32, 65, 0.1);
-  margin: 17px 0px 23px 0px;
+  margin: 17px 0px 23px -60px;
+}
+
+.smile-icon,
+.house-icon,
+.avatar-image {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+}
+
+.feedback-column {
+  width: 711px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.user-feedback {
+  margin-bottom: 15px;
+}
+
+.avatar-image img {
+  margin: -10px 0px 0px -19px;
+}
+
+.features-text {
+  width: 233px;
+  font-weight: bold;
+  &_main {
+    font-weight: normal;
+  }
+}
+
+.feedback-text {
+  margin-top: -2px;
+  width: 653px;
+}
+
+.feedback-like {
+  margin-left: 5px;
+  margin-right: 14px;
 }
